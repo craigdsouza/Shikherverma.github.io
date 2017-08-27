@@ -4,7 +4,7 @@ default_author: Craig Dsouza
 description: "Random thoughts"  # used in site head
 
 # register on google analytics and replace this token
-google_analytics: 
+google_analytics: UA-78353942-2
 # disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
 # Deleting the value would remove it from footer.
 disqus_url: 
