@@ -41,7 +41,7 @@ hr.small{max-width:100px;margin:15px auto;border-width:4px;border-color:white;}
 .intro-header .page-heading{padding:100px 0 50px;color:white;}
 @media only screen and (min-width:768px){.intro-header .site-heading,
 .intro-header .post-heading,
-.intro-header .page-heading{padding:150px 0;}
+.intro-header .page-heading{padding:150px 0px 75px 0px;}
 }
 .intro-header .site-heading,
 .intro-header .page-heading{text-align:center;}
