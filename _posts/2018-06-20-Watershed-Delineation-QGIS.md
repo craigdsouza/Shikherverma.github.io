@@ -34,13 +34,13 @@ The image above gives us a preview of what we want. The USGS Hydrosheds river ba
 
 ![Only Ganga-Brahmaputra river basin remains](/img/posts/wdq-6.png)
 
-We now clip the large DEM we started with to the boundaries of the Ganga-Brahmaputra basin. Make the DEM layer active (click on it in the Layers panel), then go to Raster > Extraction > Clipper and you see the menu below. 
+We now clip the large DEM we started with to the boundaries of the Ganga-Brahmaputra basin. This will make further operations faster and interpretation of the output images simpler. For this, make the DEM layer active (click on it in the Layers panel), then go to Raster > Extraction > Clipper and you see the menu below. 
 
 ![Raster Clip](/img/posts/wdq-7.png)
 
 Select a location to save output file, then click on Mask layer and select 'Ganga-Brahmaputra' basin as your mask layer. Click OK and you see this error, which says 'Ring self intersection'. This basically means that the vertices of the polygon we're working with overlap in one or more places which makes the polygon invalid for this operation.
 
-![Raster Clip Error](/img/posts/wdq-8.png)
+![Raster Clip Error](/img/posts/wdq-8.PNG)
 
 Normally this would be more cumbersome to fix but I was able to locate the overlapping vertices, zoom in on it, click on the editing toolbar (just above browser panel) and nudge one vertex aside to correct the overlap. It turns out these two were the only overlapping ones and after this the clip operation worked successfully.
 
