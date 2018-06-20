@@ -21,5 +21,17 @@ We can apply different styling palette, Singleband pseudocolor to get a better l
 
 ![Global DEM TOPO 1km custom styling](/img/posts/wdq-2.png)
 
+My goal in this exercise is to delineate watersheds for the Ken river basin in Central India. The watersheds created can then be used within the Humanitarian (HOT) OSM Tasking Manager to crowdsource digitizing of actual stream lines (but more on this later). We know that the Ken river is a tributary to the Yamuna river which in turn is a tributary of the Ganga river in northern India. Hence for context we load vector layers seen below. The first image shows the [states of India](http://projects.datameet.org/maps/#state-boundaries) and the second image shows larger river basins of Asia, downloaded from [USGS Hydrosheds](https://hydrosheds.cr.usgs.gov/dataavail.php)- See 30 sec SHAPE (Drainage Basins). The styling options to pay attention to are 'Outline', 'Outline width' and 'Fill style' - No brush.
+
+![States of India - DEM in background](/img/posts/wdq-3.png)
+
+
+![States of India - River basins overlaid](/img/posts/wdq-4.png)
+
+The image above gives us a preview of what we want. The USGS Hydrosheds river basins are generally larger river basins. Some smaller river basins such as Ken River are swallowed up and only the larger Ganga-Brahmaputra river basin can be seen. Next we clip out the larger Ganga-Brahmaputra river basin and use this as a starting point. We do this by clicking on the river basins layer to make it active, then clicking on 'Select feature' in the middle of the menu on the top and then clicking anywhere in the Ganga basin, which makes it turn yellow. Then right click on the river basins file in the layers panel and click 'Save as'. Check the option for 'Save only selected features', select a location to save and say OK. Once this is done you can remove the larger Asia river basins file from the Layers panel and you will only see the Ganga-Brahmaputra basin.
+
+![Clip out Ganga-Brahmaputra river basin](/img/posts/wdq-5.png)
+
+![Only Ganga-Brahmaputra river basin remains](/img/posts/wdq-6.png)
 
 
