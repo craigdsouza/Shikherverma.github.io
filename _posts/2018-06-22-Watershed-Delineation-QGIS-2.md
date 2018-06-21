@@ -14,11 +14,11 @@ We ended the last post having split the area of Ken river's basin from the large
 # 1. Data acquisition - Cartosat DEM
 To download Cartosat imagery we need to note the Latitudinal and Longitudinal boundaries of Ken river basin, 78 to 81 deg E and 23 to 26 deg N. The site to download is [here](http://bhuvan.nrsc.gov.in/data/download/index.php). The version we are using is Cartosat Version 3 R1.
 
-|![Downloaded Cartosat Imagery](/img/posts/wdq2/wdq_22.jpg)|
+|![Downloaded Cartosat Imagery](/img/posts/wdq2/wdq_20.jpg)|
 |:--:|
 | 1. Merging of nine Cartosat images |
 
-|![Comparison of Cartosat and GTOPO](/img/posts/wdq2/wdq_23.gif)|
+|![Comparison of Cartosat and GTOPO](/img/posts/wdq2/wdq_21.gif)|
 |:--:|
 | 2. Comparison of Cartosat and GTOPO |
 
@@ -26,7 +26,7 @@ To download Cartosat imagery we need to note the Latitudinal and Longitudinal bo
 # 2. Data Pre processing - Clipping, projecting and filling voids in Cartosat DEM
 To start with we will clip the Cartosat DEM, but we first need a vector mask of Ken river basin. The output of Part I of this exercise gave us a raster mask. We use `r.to.vect` to convert raster to vector as shown below
 
-|![Conversion of raster mask to vector](/img/posts/wdq2/wdq_20.jpg)|
+|![Conversion of raster mask to vector](/img/posts/wdq2/wdq_22.jpg)|
 |:--:|
 | 3. Conversion of raster mask to vector |
 
