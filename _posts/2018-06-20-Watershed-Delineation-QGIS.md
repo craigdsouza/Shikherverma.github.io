@@ -48,6 +48,39 @@ Normally this would be more cumbersome to fix but I was able to locate the overl
 
 ![Clipped raster](/img/posts/wdq-10.png)
 
+We now need the raster to be projected to a Projected Coordinate System (PCS) for the purposes of accurate analysis. The coordinate system we're using now, WGS 1984 is good for viewing maps but does not provide the required accuracy for analysis. (I may do a more detailed post on PCS later). The PCS we will use is UTM Zone 44N (EPSG code 32644). To assign a projection the steps are Raster > Projections > Assign Projection. 
+
+![Projection](/img/posts/wdq-11.png)
+
+Reading through the literature (and Stack Exchange) you will see that there are two possibilities the QGIS toolbox provides for hydrological analyses (Grass or Saga). While in some cases, the two approaches can be comparable, I chose to work with the algorithms in the Grass toolbox based on this review of the two, ['Channel network derivation from Digital Elevation Models - An evaluation of Open Source Approaches'](https://www.researchgate.net/publication/304137316_Channel_Network_Derivation_from_Digital_Elevation_Models_-_An_Evaluation_of_Open_Source_Approaches). The basic workflow is as shown below. In the first step, we separate out just the Ken River Basin from the larger Ganga Brahmaputra river basin. Then subsequently we split the Ken into smaller watersheds.
+
+![Workflow](/img/posts/wdq-12.png)
+
+One more pre-processing step required is 'Filling sinks in the DEM'. Some DEMs have artefacts or sinks where the elevation is such that water would flow into these sinks against hydrological rules. These sinks need to be corrected. For this we use `r.fill.dir` in the toolbox,  with just a single input, the projected 'Ganga-Brahmaputra basin' DEM. We only select 'Depressionless DEM' as the output desired and uncheck the other outputs.
+
+![Fill sinks](/img/posts/wdq-13.png)
+
+Our DEM is now ready for final processing. We use the all encompassing `r.watersheds` tool. This tool takes as its input the Depressionless DEM and can generate as its output, Flow Accumulation raster (number of cells draining through each cell), Drainage Direction raster, watershed basins, stream segments and more. In this first step however all we require is the Flow Accumulation and Flow Direction rasters. We can specify 'Minimum size of exterior watershed basin' as 100000. This indicates the minimum number of cells a basin must be composed of. Irrelevant since we don't need watershed basins delineated in this step, however a number must be specified. Any number too low may cause QGIS to crash. Besides this, also check 'Use positive flow accumulation even for likely underestimates' since without this we get negative flow accumulation values. I think this is because the raster is a coarse resolution (1 km). See these steps and resultant rasters below.
+
+![r.watershed](/img/posts/wdq-14.png)
+
+![drainage-direction](/img/posts/wdq-15.png)
+
+![flow-accumulation](/img/posts/wdq-16.png)
+
+We must now identify the point of confluence between the Ken river and Yamuna to separate out the Ken basin. I initially tried inserting a Google basemap with the Open Layers plugin but the map tiles are not available in our projected reference system (UTM Zone 44N). Hence I used a combination of the projected DEM and the flow accumulation map to pinpoint the confluence and created a point shapefile to mark out the location.
+
+![confluence-pinpoint](/img/posts/wdq-17.gif)
+
+Now we use the `r.water.outlet` tool. This tool takes two inputs, the Drainage direction raster generated with  `r.watersheds` and the coordinates of the confluence. To ensure the coordinates are in the same coordinate system as UTM Zone 44N we change the project coordinate system by clicking in the bottom right corner. 
+
+![r.water.outlet](/img/posts/wdq-18.png)
+
+![ken-basin](/img/posts/wdq-19.png)
+
+
+
+
 
 
 
