@@ -6,7 +6,7 @@ date: 2018-06-20 12:00:00
 author: "Craig Dsouza"
 header-img: "img/posts/wdq1/post-bg.jpg"
 comments: true
-tags: [ hydrology ]
+tags: [ hydrology,gis]
 ---
 
 I'm going to begin with the assumption that you know what a watershed is. If you do, you would know that watersheds can vary in size. There is no strict definition for the threshold in sq.km. area or stream order that makes an area a watershed versus a micro-watershed, or a river basin. There is however general agreement that a micro-watershed < watershed < river basin in terms of area.
