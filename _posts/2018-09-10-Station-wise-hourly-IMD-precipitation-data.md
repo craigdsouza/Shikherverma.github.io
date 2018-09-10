@@ -49,7 +49,7 @@ The next thing on the to-do list is to write a bit of code to access older data,
 develop heatmap visualizations, and integrate them into the [Open Water Data](http://water-data-web-app.appspot.com/) project, perhaps something like 
 [this](https://www.patrick-wied.at/static/heatmapjs/) Anyone wishing to collaborate on this please leave me a message! 
 
-#5. How you can contribute
+# 5. How you can contribute
 If you wish to contribute but not with the code, you still can. Please share this [tool](http://aws.imd.gov.in/), and the [data archive](https://github.com/craigdsouza/getRainfallData/tree/master/data)
 widely, blog about it, a link to the source would be much appreciated! Developing use cases for this data would be a great bonus. I am particularly keen on organizing 
 workshops around learning to use the data and developing preliminary analysis, if that interests you ping me. If you have your own weather stations please share that data too. 
