@@ -6,7 +6,7 @@ h2,
 h3,
 h4,
 h5,
-h6{font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800;color:'black',background-color:'white'}
+h6{font-family:'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-weight:800}
 a{color:#404040;}
 a:hover,
 a:focus{color:#0085a1;}
@@ -37,8 +37,9 @@ hr.small{max-width:100px;margin:15px auto;border-width:4px;border-color:white;}
 }
 .intro-header{background:no-repeat center center;background-color:#808080;background-attachment:scroll;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;-o-background-size:cover;margin-bottom:50px;}
 .intro-header .site-heading,
-.intro-header .post-heading,
 .intro-header .page-heading{padding:100px 0 50px;color:white;}
+.intro-header .post-heading{padding:100px 0 50px}
+
 @media only screen and (min-width:768px){.intro-header .site-heading,
 .intro-header .post-heading,
 .intro-header .page-heading{padding:150px 0px 75px 0px;}
