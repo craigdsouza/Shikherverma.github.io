@@ -12,12 +12,15 @@ tags: [ hydrology,precipitation]
 # 1. In Brief
 The Indian Meteorological Department (IMD) which has for long refrained from openly publishing its station-wise precipitation data is now doing so.
 I recently came across their new web app: [http://aws.imd.gov.in/](http://aws.imd.gov.in/), which allows users to select a state and view a
-table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below. If anyone already knew of the existence of this web 
-app do let me know how you found out about it. Curious to know how IMD publishes new updates such as this. 
+table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below.  
 
 |![Preview of IMD AWS Web App](/img/posts/imdaws/data-preview.PNG)|
 |:--:|
 | 1. Snapshot preview of IMD data |
+
+If anyone already knew of the existence of this web app do let me know how you found out about it. Curious to know how IMD publishes new updates such as this.
+[![](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app)](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app/vote)
+[![](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it)](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it/vote)
 
 The user interface is very intuitive and gives a smooth experience overall. The data itself doesn't take too long to load. A version of this
 web app was also available more than 2 years ago, after which it was taken down. That however had a much less user friendly, slower interface.
@@ -51,7 +54,7 @@ develop heatmap visualizations, and integrate them into the [Open Water Data](ht
 
 # 5. How you can contribute
 If you wish to contribute but not with the code, you still can. Please share this [tool](http://aws.imd.gov.in/), and the [data archive](https://github.com/craigdsouza/getRainfallData/tree/master/data)
-widely, blog about it, a link to the source would be much appreciated! Developing use cases for this data would be a great bonus. I am particularly keen on organizing 
+widely, blog about it, attribution to the source would be much appreciated! Developing use cases for this data would be a great bonus. I am particularly keen on organizing 
 workshops around learning to use the data and developing preliminary analysis, if that interests you ping me. If you have your own weather stations please share that data too. 
 The hope here is that creating more shared commons data repositories can help build capacity and break institutional silos.
 
