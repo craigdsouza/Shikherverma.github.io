@@ -19,8 +19,8 @@ table of hourly precipitation for all stations in the state. Preview can be seen
 | 1. Snapshot preview of IMD data |
 
 I was curious about the general awareness about this app. Please click one of the poll options below to let me know.
-[![](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app)](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app/vote)
-[![](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it)](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it/vote)
+![https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20knew%20about%20the%20IMD%20AWS%20web%20app/vote)
+![https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it](https://api.gh-polls.com/poll/01CQ3KY00X06Z0474GKXT7FZXQ/I%20didn't%20know%20about%20it/vote)
 
 If anyone already knew of the existence of this web app do let me know how you found out about it. Curious to know how IMD publishes new updates such as this.
 The user interface is very intuitive and gives a smooth experience overall. The data itself doesn't take too long to load. A version of this
