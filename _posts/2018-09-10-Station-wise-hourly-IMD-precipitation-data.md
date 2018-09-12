@@ -14,7 +14,7 @@ The Indian Meteorological Department (IMD) which has for long refrained from ope
 I recently came across their new web app: [http://aws.imd.gov.in/](http://aws.imd.gov.in/), which allows users to select a state and view a
 table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below.  
 
-Edit: Clarification, the web-app still does not allow downloads, only viewing. Downloads I assume are only for authorized access, however we're now archiving the web-app's data
+> **Clarification**: the web-app still does not allow downloads, only viewing. Downloads I assume are only for authorized access, however we're now archiving the web-app's data
 so it can be downloaded by anyone (For more details, read section 2 on this page). Please see this [link](https://github.com/craigdsouza/getRainfallData), the 'data' folder 
 for one week's data, from Aug 30th-Sep5th. To download, click on the green 'Clone or Download' button and then 'Download zip'. The location of this folder will change in the 
 future, this is a temporary arrangement, I will post updates here when that happens. 
