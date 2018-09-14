@@ -4,7 +4,7 @@ title : "Station-wise,Hourly rainfall data from IMD now available"
 subtitle : "see it to believe it!"
 date: 2018-09-10 12:00:00
 author: "Craig Dsouza"
-header-img: "img/posts/imdaws/banner.PNG"
+header-img: "img/posts/imdaws/banner.png"
 comments: true
 tags: [ hydrology,precipitation]
 ---
