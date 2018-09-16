@@ -18,14 +18,16 @@ Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one
 |   | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_6) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_7) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_8) |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
-| Click [here](http://bit.ly/IMDHourlyARG) for full time series|
+
+Click [here](http://bit.ly/IMDHourlyARG) for full ARG time series
 
 # AWS Data (573 stations)
 
 |   | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_6) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_7) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_8) |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
-| Click [here](http://bit.ly/IMDHourlyAWS) for full time series |
+
+Click [here](http://bit.ly/IMDHourlyAWS) for full AWS time series
 
 
 # AGRO Data (128 stations)
