@@ -14,14 +14,16 @@ Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather
 Click [here]() to download all data [162 MB]
 
 # ARG Data (1351 stations)
-| | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
+
+|   | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
 |:--:|:--:|:--:|:--:|
-| 2018 | June | July | August |
+| **2018** | June | July | August |
 
 # AWS Data (573 stations)
-| | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
+
+|   | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
 |:--:|:--:|:--:|:--:|
-| 2018 | June | July | August |
+| **2018** | June | July | August |
 
 # AGRO Data (128 stations)
 To be uploaded
