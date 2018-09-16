@@ -11,19 +11,22 @@ category: "data"
 
 Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
 
-Click [here]() to download all data [162 MB]
+Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one of the folders below to download a partial dataset
 
 # ARG Data (1351 stations)
 
-|   | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() |
+|   | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_6) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_7) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyARG2018_8) |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
+| Click [here](http://bit.ly/IMDHourlyARG) for full time series|
 
 # AWS Data (573 stations)
 
-|   | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() |
+|   | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_6) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_7) | [![Folder Icon](/img/folder-icons8.png)](http://bit.ly/IMDHourlyAWS2018_8) |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
+| Click [here](http://bit.ly/IMDHourlyAWS) for full time series |
+
 
 # AGRO Data (128 stations)
 To be uploaded
