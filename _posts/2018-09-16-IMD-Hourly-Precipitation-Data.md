@@ -9,7 +9,7 @@ tags: [ hydrology,precipitation]
 category: "data"
 ---
 
-Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
+Hourly Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
 
 Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one of the folders below to download a partial dataset
 
