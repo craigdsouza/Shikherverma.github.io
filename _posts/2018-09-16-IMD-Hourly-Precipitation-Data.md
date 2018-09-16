@@ -15,13 +15,13 @@ Click [here]() to download all data [162 MB]
 
 # ARG Data (1351 stations)
 
-|   | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
+|   | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
 
 # AWS Data (573 stations)
 
-|   | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() | [![Folder Icon](/img/folder.png)]() |
+|   | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() | [![Folder Icon](/img/folder-icons8.svg)]() |
 |:--:|:--:|:--:|:--:|
 | **2018** | June | July | August |
 
