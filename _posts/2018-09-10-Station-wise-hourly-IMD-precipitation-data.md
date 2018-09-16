@@ -15,9 +15,9 @@ The Indian Meteorological Department (IMD) which has for long refrained from ope
 I recently came across their new web app: [http://aws.imd.gov.in/](http://aws.imd.gov.in/), which allows users to select a state and view a
 table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below.  
 
-> **Clarification**: the web-app still does not allow downloads, only viewing. Downloads I assume are only for authorized access, however we're now archiving the web-app's data
-so it can be downloaded by anyone (For more details, read section 2 on this page). Please see this [link](https://www.dropbox.com/sh/b9q0fo5rtuv0e8a/AABL5FvzCb-I-JiSzdiP0zXOa?dl=0) 
-for a bulk download of hourly data for all states. As of now, the data available is for the months **June**,**July**,**August**,2018 for the **AWS** station type.
+> **Clarification**: the web-app still does not allow downloads, only viewing. Downloads I assume are only for government access, however we're now archiving the web-app's data
+so it can be downloaded by anyone (For more details on how, read section 2 on this page). Please see this [link](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data) 
+for the archived hourly data for all states. As of now, the data available is for the months **June**,**July**,**August**,2018 for the **ARG** and **AWS** station types.
 
 |![Preview of IMD AWS Web App](/img/posts/imdaws/data-preview.PNG)|
 |:--:|
@@ -45,7 +45,7 @@ may cause the web app to crash.
 Over the weekend I attempted a bit of web scraping for the first time to resolve this second issue. The code shared in this 
 [repository](https://github.com/craigdsouza/getRainfallData) allows users to automate the process of visiting the IMD web app and saving station data, 
 one week at a time. The plan right now is to run this code once a week and save each batch of new data that is generated and archive the records as a public 
-commons. You can access the saved data [here](https://github.com/craigdsouza/getRainfallData/tree/master/data) . The acronyms, ARG, AWS, AGRO you see are 
+commons. You can access the saved data [here](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data) . The acronyms, ARG, AWS, AGRO you see are 
 the different types of weather stations operated by IMD. According to their page, there are 1351, 573 and 128 stations of each kind respectively.
 
 # 3. Potential uses of this data
@@ -65,5 +65,12 @@ workshops around learning to use the data and developing preliminary analysis, i
 The hope here is that creating more shared commons data repositories can help build capacity and break institutional silos.
 
 Will continue to post updates on this effort below.. stay tuned..
+
+# Updates
+17th Sep 2018:
+- Added data for June, July, August, 2018 for the ARG and AWS station types.
+- Added code repository that user can use to download data themselves.
+
+If you do download the data and analyse it mail me so I can understand its usage. Likewise if you are familiar with python and can help me archive more data, email me at craigds022@gmail.com
 
 
