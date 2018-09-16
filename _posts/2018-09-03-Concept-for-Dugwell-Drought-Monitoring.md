@@ -7,6 +7,7 @@ author: "Craig Dsouza"
 header-img: "img/posts/ddm/overpass-export.png"
 comments: true
 tags: [ geohydrology,remoteSensing]
+category: "blog"
 ---
 
 # 1. Hypothesis
