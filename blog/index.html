@@ -11,17 +11,19 @@ Browse through the list of posts below or click on one of the tags above to see 
 {% for post in paginator.posts %}
 
 <div class="post-preview">
-    <a href="{{ post.url }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.default_author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+	{% if post.category == "blog" %}
+		<a href="{{ post.url }}">
+			<h2 class="post-title">
+				{{ post.title }}
+			</h2>
+			{% if post.subtitle %}
+			<h3 class="post-subtitle">
+				{{ post.subtitle }}
+			</h3>
+			{% endif %}
+		</a>
+		<p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.default_author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+	{% endif %}	
 </div>
 <hr>
 {% endfor %}

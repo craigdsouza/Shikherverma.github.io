@@ -7,6 +7,7 @@ author: "Craig Dsouza"
 header-img: "img/posts/imdaws/banner.png"
 comments: true
 tags: [ hydrology,precipitation]
+category: "blog"
 ---
 
 # 1. In Brief
@@ -15,9 +16,8 @@ I recently came across their new web app: [http://aws.imd.gov.in/](http://aws.im
 table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below.  
 
 > **Clarification**: the web-app still does not allow downloads, only viewing. Downloads I assume are only for authorized access, however we're now archiving the web-app's data
-so it can be downloaded by anyone (For more details, read section 2 on this page). Please see this [link](https://github.com/craigdsouza/getRainfallData), the 'data' folder 
-for one week's data, from Aug 30th-Sep5th. To download, click on the green 'Clone or Download' button and then 'Download zip'. The location of this folder will change in the 
-future, this is a temporary arrangement, I will post updates here when that happens. 
+so it can be downloaded by anyone (For more details, read section 2 on this page). Please see this [link](https://www.dropbox.com/sh/b9q0fo5rtuv0e8a/AABL5FvzCb-I-JiSzdiP0zXOa?dl=0) 
+for a bulk download of hourly data for all states. As of now, the data available is for the months **June**,**July**,**August**,2018 for the **AWS** station type.
 
 |![Preview of IMD AWS Web App](/img/posts/imdaws/data-preview.PNG)|
 |:--:|
