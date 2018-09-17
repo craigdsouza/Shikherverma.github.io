@@ -9,16 +9,16 @@ tags: [ hydrology,precipitation]
 category: "data"
 ---
 
-About: Hourly Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
+**About**: Hourly Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
 
-Source: [http://aws.imd.gov.in](http://aws.imd.gov.in)
+**Source**: [http://aws.imd.gov.in](http://aws.imd.gov.in)
 
-Read More: [https://craigdsouza.github.io/blog/Station-wise-hourly-IMD-precipitation-data](https://craigdsouza.github.io/blog/Station-wise-hourly-IMD-precipitation-data)
+**Read More**: [https://craigdsouza.github.io/blog/Station-wise-hourly-IMD-precipitation-data](https://craigdsouza.github.io/blog/Station-wise-hourly-IMD-precipitation-data)
 
 # Downloads
 Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one of the months below to download a partial dataset
 
-## ARG Data (1351 stations)
+### ARG Data (1351 stations)
 
 |   | ![Folder Icon](/img/folder-icons8.png) | ![Folder Icon](/img/folder-icons8.png) | ![Folder Icon](/img/folder-icons8.png) |
 |:--:|:--:|:--:|:--:|
@@ -26,7 +26,7 @@ Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one
 
 Click [here](http://bit.ly/IMDHourlyARG) for full ARG time series [56 MB]
 
-## AWS Data (573 stations)
+### AWS Data (573 stations)
 
 |   | ![Folder Icon](/img/folder-icons8.png) | ![Folder Icon](/img/folder-icons8.png) | ![Folder Icon](/img/folder-icons8.png) |
 |:--:|:--:|:--:|:--:|
@@ -35,7 +35,7 @@ Click [here](http://bit.ly/IMDHourlyARG) for full ARG time series [56 MB]
 Click [here](http://bit.ly/IMDHourlyAWS) for full AWS time series [104 MB]
 
 
-## AGRO Data (128 stations)
+### AGRO Data (128 stations)
 To be uploaded
 
 
