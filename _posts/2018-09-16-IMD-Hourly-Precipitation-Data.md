@@ -11,6 +11,8 @@ category: "data"
 
 Hourly Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)
 
+Source: [http://aws.imd.gov.in](http://aws.imd.gov.in)
+
 Click [here](http://bit.ly/IMDHourly) to download all data [162 MB] or click one of the months below to download a partial dataset
 
 # ARG Data (1351 stations)
