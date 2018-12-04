@@ -24,38 +24,17 @@ visualize their data. While Kobo Toolbox does provide a great service it is limi
 cannot visualize their data differently. It is an appropriate choice for shorter term projects and small teams. It is also more appropriate for basic metric tracking but cannot 
 allow for insights derived by combining multiple metrics. 
 
+An alternative to Kobo Toolbox, for more complex data collection systems is Google Sheets. We will use Google Data Studio, a new Google product, made open for all users since Sept of 2018 to visualize the data collected on Google Sheets. Data Studio is a versatile drag and drop dashboard creator which can access multiple data sources to display metrics. 
+
+## 1.2 Managing Permissions
+
+
 # 2. Data Visualization
-An alternative to Kobo Toolbox, for more complex data collection systems is Google Data Studio. Data Studio is a new Google product, made open for all users since Sept of 2018.
-Data Studio is a drag and drop dashboard creator which can access multiple data sources to display metrics. In this guide we will make a Data Studio dashboard to visualize data
-collected with ODK Collect. The data will be submitted to Google Sheets instead of ODK Aggregate or Kobo Toolbox and Data Studio will read from Google Sheets.
 
-|![Preview of IMD AWS Web App](/img/posts/imdaws/data-preview.PNG)|
-|:--:|
-| 1. Snapshot preview of IMD data |
 
-I was curious about the general awareness about this app. Please click one of the poll options below to let me know.
-[![](https://api.gh-polls.com/poll/01CQ3QM0RNSVDXQEQJEAY364NG/I%20knew%20about%20the%20IMD%20AWS%20Web%20App)](https://api.gh-polls.com/poll/01CQ3QM0RNSVDXQEQJEAY364NG/I%20knew%20about%20the%20IMD%20AWS%20Web%20App/vote)
-[![](https://api.gh-polls.com/poll/01CQ3QM0RNSVDXQEQJEAY364NG/I%20did%20not%20know%20about%20it)](https://api.gh-polls.com/poll/01CQ3QM0RNSVDXQEQJEAY364NG/I%20did%20not%20know%20about%20it/vote)
+# 3. Challenges that remain
 
 
 
-|![Preview of Old IMD AWS Web App](/img/posts/imdaws/old-imdaws.png)|
-|:--:|
-| 2. Snapshot preview of old IMD AWS Web App |
 
-# 2. Challenges that remain
-
-
-# 3. Potential uses of this data
-
-
-# 4. Plans ahead
-
-
-# 5. How you can contribute
-
-
-Will continue to post updates on this effort below.. stay tuned..
-
-# Updates
 
