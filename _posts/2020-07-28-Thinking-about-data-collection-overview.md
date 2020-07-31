@@ -6,7 +6,7 @@ date: 2020-07-28 14:57:00
 author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
 comments: true
-tags: [ #data, #surveys, #impact ]
+tags: [ data, surveys, impact ]
 category: "blog"
 ---
 * I'm writing this piece based on my experience working with non-profits in the development sector. This experience has been limited
