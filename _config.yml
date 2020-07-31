@@ -1,25 +1,27 @@
 # Site settings
-title: Craig Dsouza
+title: 😇 Craig's Personal Site 😉
 default_author: Craig Dsouza
-description: "Random thoughts"  # used in site head
+author: Craig Dsouza
+description: All things me, personal + professional (Open data, Data Collection, GIS/RS)  # used in site head
+keywords: GIS, RS, Open data, ODK, web-scraping
 
 # register on google analytics and replace this token
 google_analytics: UA-78353942-2
 # disque comments are broken if you send http:// along with url, this url is same as the one given on disqus
 # Deleting the value would remove it from footer.
-disqus_url: 
-disqus_id: 
+disqus_url:
+disqus_id:
 # register on feedburner and replace this url. Deleting the value will remove it from footer.
-feedburner_url: 
+feedburner_url:
 
 # footer details. Deleting the value would remove it from footer.
 github_username:  craigdsouza
 facebook_username:  craigds022
 email: craigds022@gmail.com
-stackoverflow_username: 
+stackoverflow_username:
 twitter_username : dsouza_craig
 linkedin_username : craig-dsouza
-keybase_username : 
+keybase_username :
 copyright_name: Craig Dsouza
 rss :
 
