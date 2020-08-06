@@ -1,7 +1,7 @@
 ---
 layout: post
-title : "Data Collection Alternatives"
-subtitle : "choosing between ODK, Kobo & Google Forms"
+title : "Survey form creation"
+subtitle : "comparing ODK, Kobo, Google Forms & Survey Monkey"
 date: 2020-08-06 09:14:00
 author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
@@ -26,14 +26,22 @@ benchmarked and validated surveys.
 
 |feature | ODK | Kobo | Google Forms | Survey Monkey |
 |:--:|:--:|:--:|:--:|:--:|
-| offline form creation | ✅ | ❌ | ❌ | ❌ |
-| survey templates      | ❌ |    |    | ✔ |
-| question libraries    | ❌ | ✅ | ❌ | ❌ |
+| desktop tool (offline) form creation | ✅ | ❌ | ❌ | ❌ |
+| web tool for form creation           | ✅ | ✅ | ✅ | ✅ |
+| ready-to-use survey templates        | ❌ | ❌ | ❌ | ✅ |
+| question libraries                   | ❌ | ✅ | ❌ | ❌ |
+| skip logic                           |
+| response validation                  |
+| grouping questions                   |
+| repeat questions                     |
+| metadata                             |
+
 | question types 
-| skip logic            |
-| response validation   |
-| form styling          |
+| integer |
+| decimal |
+| text    |
+| select_one |
+| select_multiple |
 
-
-# 1. Offline features enabled
-This is 
+| form styling                         |
+| range   |
