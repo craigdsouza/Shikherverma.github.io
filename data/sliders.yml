@@ -2,14 +2,12 @@
 - selector: form_builders_1
   captions: true
   images:
-    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_odk.jpg
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_odk.PNG
       alt: ODK Build
-    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_kobo.jpg
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_kobo.PNG
       alt: Kobo Form Builder
-    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_gforms.jpg
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_gforms.PNG
       alt: Google Forms
-    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_smonkey.jpg
-      alt: Survey Monkey Creator
   settings:
     height: "'auto'"
     effect: "'fade'"
