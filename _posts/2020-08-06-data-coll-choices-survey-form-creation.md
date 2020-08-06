@@ -59,6 +59,7 @@ substitute feature , 'question libraries'.
 | multi-lingual forms                  |
 
 ## 1.1 Desktop/Web
+{% include slider.html selector="form_builders_1" %}
 
 ## 1.2 Question types/Metadata questions
 
