@@ -70,9 +70,9 @@ the last simply indicates a limited subset of the features is possible.*
 | form styling                                 | limited | limited | ❌ |
 | multi-lingual forms                          | ✅ | ✅ | ~ |
 
-[1] the audit metadata question (which examines how an enumerator uses a form) isn't available with ODK Build
+[1] the audit metadata question (which examines how an enumerator uses a form) isn't available with ODK Build<br>
 [2] Google forms only offers form logic based on responses to 'select one'/'select multiple' questions
-In comparison, ODK and Kobo allow form logic based on responses to text and numeric questions as well.
+In comparison, ODK and Kobo allow form logic based on responses to text and numeric questions as well.<br>
 
 
 ## 1.1 Desktop/Web
@@ -112,9 +112,9 @@ acknowledge (prompts) , barcodes/QR codes, and calculate (dynamic variables)
 
 [1] google forms doesn't allow media(image/audio/video) entries directly, but it can be facilitated indirectly by using the 'file' input
 this is less than ideal however especially if a form has multiple media entries, an enumerator must take these photos/audio/video separately
-and then remember filenames and locations for entry later on.
+and then remember filenames and locations for entry later on.<br>
 [2] similarly acknowledge (prompts) is also something google forms doesn't directly allow, but this can be implemented using a simple
-multiple choice question with select_one input.
+multiple choice question with select_one input.<br>
 
 **metadata questions** can be useful for instance to identity submissions based on the enumerator's id or a device id.
 ODK Build and Kobo both offer start time, end time, date, device id, username, SIM serial, subscriber ID, phone number as metadata fields,
@@ -136,16 +136,16 @@ Examples of some of these composite questions are listed below. When combining s
 | table/matrix of questions               | ~  | ✅ | ✅ |
 | cascading selects                       | ~  | ✅ | ❌ |
 
-[1] range is simply an **integer** input with restrictions on the range of integers
+[1] range is simply an **integer** input with restrictions on the range of integers<br>
 [2] ranking is simply a **group of select_one** questions that use one list of choices, with the rule applied that each choice is 
-eliminated from the choice list after it has been chosen once.
+eliminated from the choice list after it has been chosen once.<br>
 [3] **multiple Choice Grid** (Google Forms) **OR** **rating** (Kobo toolbox) both present respondents with a list of questions, 
 each of which has a 'select one' response, e.g. (yes/no; good/average/bad).
-This cab be done in ODK Build with a **group of select_one** questions where each question has the same list of choices
-[4] **checkbox grid** questions in Google Forms, can be replicated in Kobo Build or ODK Build as **groups of select_multiple** questions.
-[5] tabular/matrix questions are a **group of groups of questions** where each question has 
+This cab be done in ODK Build with a **group of select_one** questions where each question has the same list of choices<br>
+[4] **checkbox grid** questions in Google Forms, can be replicated in Kobo Build or ODK Build as **groups of select_multiple** questions.<br>
+[5] tabular/matrix questions are a **group of groups of questions** where each question has a group of questions within.<br>
 [6] cascading selects allows the list of choices of one question to be filtered based on the input to the previous question. Hence it is
-similar to a sequence of **select_one** questions
+similar to a sequence of **select_one** questions<br>
 
 **repeats** are another indispensable feature of XForms/XLSForms. They allow an enumerator to flexibly repeat a group of questions any number
 of times as the scenario demands. For instance if a set of questions (height, weight, BMI) needs to be inputted for all children in a classroom,
@@ -169,14 +169,14 @@ With select_multiple, response validation could be used to limit the combination
 | text - flexible pattern matching [4]          | ~  | ~  | ~  |
 | select_multiple - prevent certain combinations| ~  | ~  | ❌ |
 
-[1] within ODK Build equal to or not equal to are not available as direct options, but one can implement a workaround using 'range' 
+[1] within ODK Build equal to or not equal to are not available as direct options, but one can implement a workaround using 'range' <br>
 [2] this is an important validation field, lacking in Google Forms , but available in both ODK and Kobo with syntax knowledge.
 It allows comparing of an inputted numeric value with a previously entered number, for instance, if a respondent indicates their age
-is 10 years old , one can validate the input on the `school level` field to ensure grade 6 is not selected.
+is 10 years old , one can validate the input on the `school level` field to ensure grade 6 is not selected.<br>
 [3] a text string can be checked to see if it is equal to a particular known text entry, this is useful for quiz forms, to check
-correct answers.
+correct answers.<br>
 [4] Regular Expressions is a form of syntax that can be used to flexibly validate any possible text string combination.
-For instance regex is used to check that a valid e-mail id is entered, or a valid phone number, or password.
+For instance regex is used to check that a valid e-mail id is entered, or a valid phone number, or password.<br>
 
 **form logic** is the core reason why the XForms/XLSForms format, used by both ODK and Kobo are so indispensable. It sets apart
 these tools from simpler survey form builders such as Google forms. If the survey you have in mind is more complex in logic
