@@ -1,12 +1,12 @@
 ---
 layout: post
 title : "Survey form creation"
-subtitle : "comparing ODK, Kobo, Google Forms & Survey Monkey"
+subtitle : "choosing between ODK, Kobo, Google Forms"
 date: 2020-08-06 09:14:00
 author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
 comments: true
-tags: [ odk, kobo, google-forms , survey-monkey]
+tags: [ odk, kobo, google-forms ]
 category: "blog"
 image_sliders:
   - form_builders_1
@@ -19,15 +19,21 @@ Data collection platforms consist of multiple components
 3. data storage
 4. data visualization
 
-In this post we will cover form/survey builders, and do a detailed comparison of four major alternatives, ODK, Kobo, Google Forms, and Survey Monkey.
+In this post we will cover form/survey builders, and do a pointwise comparison of three major free alternatives, ODK, Kobo, Google Forms.
+Future blogposts may go into detail on each of these individually. I considered Survey Monkey too, but it's use cases are focused heavily 
+on companies and market research, which would take this blogpost off on a tangent, and hence I chose to leave it out for now. 
+
+Also note that the comparison being made between ODK Build and Kobo Build can be misleading. Both ODK Build and Kobo Build create forms
+in the same format, XForms or XLSForms, hence ultimately the set of features both forms can theoretically provide is identical. The only
+distinction comes in because the form builders are designed differently, hence adding some features may be easier in ODK Build as compared
+to Kobo Build or vice-versa.
 
 # 1. An overview of the features of form builders
 software that helps create surveys falls under the category of form builders. Listed here are some core features, each of which is explained in
 further detail in sections below. 
 - **Desktop/Web** : Some platforms have dedicated desktop software for form creation, this enables users to create forms offline, whereas others 
-simply use your web browser for the same, which requires an active internet connection. 
+simply use your web browser for the same, which requires an active internet connection and signing up for a user account. 
 - **Question types**: this include the basics, from text and numeric input to more advanced such as barcode input or image/audio input. 
-___ has the most variety while __ has the least.
 - **Metadata questions**: such as start, end times, userid, deviceid, etc fall under metadata questions.
 - **Form logic**: is a set of rules for whether or not a question should be displayed based on responses to previous questions.
 - **Response validation**: is the application of custom rules to each question being asked to ensure the response is a valid response.
@@ -42,49 +48,154 @@ substitute feature , 'question libraries'.
 - **Form styling**: this feature allows forms to be styled in different ways depending on data collector's preferences.
 - **Multi-lingual support**: this feature allows the same form to be created in multiple language formats for different audiences.
 
-|feature | ODK | Kobo | Google Forms | Survey Monkey |
-|:--:|:--:|:--:|:--:|:--:|
-| desktop tool (offline) form creation | ✅ | ❌ | ❌ | ❌ |
-| web tool for form creation           | ✅ | ✅ | ✅ | ✅ |
-| question types                       |
-| metadata questions                   |
-| form (skip) logic                    |
-| response validation                  |
-| question grouping                    |
-| repeat questions                     |
-| dynamic calculations                 | 
-| survey templates (ready-to-use )     | ❌ | ❌ | ❌ | ✅ |
-| question libraries                   | ❌ | ✅ | ❌ | ❌ |
-| form styling                         |
-| multi-lingual forms                  |
+*tables in this document contain either ✅ or ❌ or ~ or limited*
+* the first indicates the feature is possible, using the UI selections only, the second indicates the feature isn't possible at all
+the third indicates the feature is possible, but only with workarounds, or knowledge of syntax, which can be non-intuitive at times,
+the last simply indicates a limited subset of the features is possible.*
+*one might need to scroll left-right on mobile devices to view tables in this post*
+
+|feature                                       | ODK | Kobo | Google Forms |
+|:--:|:--:|:--:|:--:|
+| desktop tool (offline) form creation         | ✅ | ❌ | ❌ |
+| web tool for form creation                   | ✅ | ✅ | ✅ |
+| question types                               | 20+ | 20+ | 10 |
+| metadata questions [1]                       |  8  |  9  |  1 |
+| form (skip) logic [2]                        | ✅ | ✅ | limited |
+| response validation                          | ✅ | ✅ | ✅ | 
+| question grouping                            | ✅ | ✅ | ✅ |
+| repeat questions                             | ✅ | ✅ | ❌ |
+| dynamic calculations                         | ✅ | ✅ | ❌ |
+| survey templates (ready-to-use )             | ❌ | ❌ | ❌ |
+| question libraries / build-your-own-template | ❌ | ✅ | ✅ |
+| form styling                                 | limited | limited | ❌ |
+| multi-lingual forms                          | ✅ | ✅ | ~ |
+
+[1] the audit metadata question (which examines how an enumerator uses a form) isn't available with ODK Build
+[2] Google forms only offers form logic based on responses to 'select one'/'select multiple' questions
+In comparison, ODK and Kobo allow form logic based on responses to text and numeric questions as well.
+
 
 ## 1.1 Desktop/Web
+Here's a preview of what building a form in each of the builders looks like. ODK Build pictured here is the desktop tool,
+(a web tool is also available), whereas Kobo and Google Forms can only be created using a web browser. 
+Purely from a user experience perspective Google Forms has an advantage, you simply have to type in your question and it 
+auto-detects the type of question, whether *text*, *numeric*, *date* or *multiple choice*. 
+Kobo and ODK Build are also fairly simple to use, offering intuitive user interfaces, in the case of Kobo by hiding away some 
+of the more technical terms under *settings* for each question, whereas ODK Build has a panel on the right for each questions' settings. 
+Both UIs have drag and drop functionality as well.
+
+Moreover, if one wishes to avoid form builders altogether and build survey forms (XLSForms) in Microsoft Excel, as I enjoy,
+that is possible too, if one gains familiarity with the conventions involved there are definite advantages to building XLSForms
+in Excel, though for beginners, using a Form Builder is an easy way to get started.
+
 {% include slider.html selector="form_builders_1" %}
 
 ## 1.2 Question types/Metadata questions
+**Fundamental question (widget) types** in ODK and Kobo Build include text, integer, decimal, multiple choice(select_one, select_multiple), 
+date, time, date+time, geo(point/trace/shape), media (image/audio/video), files, note, acknowledge (to a prompt), 
+barcode/QR Code inputs, and calculate. Of these google forms has the functionality for all except geo(point/trace/shape), media, 
+acknowledge (prompts) , barcodes/QR codes, and calculate (dynamic variables)
+ 
+| question types                          |    ODK Build    |    Kobo Build    |    Google Forms    |
+|:--:|:--:|:--:|:--:|
+| text                                    | ✅ | ✅ | ✅ |
+| integer, decimal                        | ✅ | ✅ | ✅ |
+| select_one, select_multiple             | ✅ | ✅ | ✅ |
+| date, time                              | ✅ | ✅ | ✅ |
+| geopoint,geotrace,geoshape              | ✅ | ✅ | ❌ |
+| image,audio,video [1]                   | ✅ | ✅ | ~  |
+| file                                    | ✅ | ✅ | ✅ |
+| note                                    | ✅ | ✅ | ✅ |
+| acknowledge (a prompt) [2]              | ✅ | ✅ | ~  |
+| barcode/ QR Code                        | ✅ | ✅ | ❌ |
+| calculate (dynamic variable)            | ✅ | ✅ | ❌ |
 
-| question types 
-| integer |
-| decimal |
-| text    |
-| select_one |
-| select_multiple |
+[1] google forms doesn't allow media(image/audio/video) entries directly, but it can be facilitated indirectly by using the 'file' input
+this is less than ideal however especially if a form has multiple media entries, an enumerator must take these photos/audio/video separately
+and then remember filenames and locations for entry later on.
+[2] similarly acknowledge (prompts) is also something google forms doesn't directly allow, but this can be implemented using a simple
+multiple choice question with select_one input.
 
-## 1.3 Form logic
+**metadata questions** can be useful for instance to identity submissions based on the enumerator's id or a device id.
+ODK Build and Kobo both offer start time, end time, date, device id, username, SIM serial, subscriber ID, phone number as metadata fields,
+whereas Kobo also offers the audit metadata field, in ODK Build this isn't available. Google Forms doesn't offer any metadata fields. 
 
-## 1.4 Response validation
+## 1.3 Composite questions, Groups and Repeats
+While the fundamental question types have been listed above, form builders also offer **composite question types**. 
+ODK Build still lacks in options for creating multiple composite question types, hence if you need some of these, 
+you could consider Kobo Build/Google forms or building forms from scratch in XLSForms format.
 
-## 1.5 Question grouping
+Examples of some of these composite questions are listed below. When combining several questions ODK & Kobo Build use groups, 
 
-## 1.6 Repeat questions
+| composite question types                          |    ODK Build    |    Kobo Build    |    Google Forms    |
+|:--:|:--:|:--:|:--:|
+| range                                   | ~  | ✅ | ❌ |
+| ranking                                 | ~  | ✅ | ✅ |
+| multiple choice grid / rating           | ~  | ✅ | ✅ |
+| checkbox grid                           | ~  | ~  | ✅ |
+| table/matrix of questions               | ~  | ✅ | ✅ |
+| cascading selects                       | ~  | ✅ | ❌ |
 
-## 1.7 Dynamic calculations
+[1] range is simply an **integer** input with restrictions on the range of integers
+[2] ranking is simply a **group of select_one** questions that use one list of choices, with the rule applied that each choice is 
+eliminated from the choice list after it has been chosen once.
+[3] **multiple Choice Grid** (Google Forms) **OR** **rating** (Kobo toolbox) both present respondents with a list of questions, 
+each of which has a 'select one' response, e.g. (yes/no; good/average/bad).
+This cab be done in ODK Build with a **group of select_one** questions where each question has the same list of choices
+[4] **checkbox grid** questions in Google Forms, can be replicated in Kobo Build or ODK Build as **groups of select_multiple** questions.
+[5] tabular/matrix questions are a **group of groups of questions** where each question has 
+[6] cascading selects allows the list of choices of one question to be filtered based on the input to the previous question. Hence it is
+similar to a sequence of **select_one** questions
 
-## 1.8 Survey templates
+**repeats** are another indispensable feature of XForms/XLSForms. They allow an enumerator to flexibly repeat a group of questions any number
+of times as the scenario demands. For instance if a set of questions (height, weight, BMI) needs to be inputted for all children in a classroom,
+then repeats allow for the height and weight questions to be repeated as many times as there are children in the classroom, without knowing 
+this number in advance.
 
-## 1.9 Form styling
+## 1.4 Response validation & Form Logic
+**response validation** can be applied for text, numeric, and select_multiple questions. With numeric, response validation can be based on
+magnitude, for example the number should be less than or greater than a given fixed value, or another value captured by the form. With text, 
+response validation could be used to limit length of a text string, or check if the string is equal to another string or contains a substring.
+With select_multiple, response validation could be used to limit the combination of choices. Here's a comparison of the three tools. 
 
-| form styling                         |
-| range   |
+| validation type                               |    ODK Build    |    Kobo Build    |    Google Forms    |
+|:--:|:--:|:--:|:--:|
+| numeric - less than / greater than / between  | ✅ | ✅ | ✅ |
+| numeric - equal to / not equal to [1]         | ~  | ✅ | ✅ |
+| numeric - not between                         | ~  | ~  | ✅ |
+| numeric - compare with dynamic variable [2]   | ✅ | ✅ | ❌ |
+| text - length of string                       | ✅ | ~  | ✅ |
+| text - equal to / not equal to 'pattern' [3]  | ~  | ✅ | ~  |
+| text - flexible pattern matching [4]          | ~  | ~  | ~  |
+| select_multiple - prevent certain combinations| ~  | ~  | ❌ |
 
-## 1.10 Multi-lingual forms
+[1] within ODK Build equal to or not equal to are not available as direct options, but one can implement a workaround using 'range' 
+[2] this is an important validation field, lacking in Google Forms , but available in both ODK and Kobo with syntax knowledge.
+It allows comparing of an inputted numeric value with a previously entered number, for instance, if a respondent indicates their age
+is 10 years old , one can validate the input on the `school level` field to ensure grade 6 is not selected.
+[3] a text string can be checked to see if it is equal to a particular known text entry, this is useful for quiz forms, to check
+correct answers.
+[4] Regular Expressions is a form of syntax that can be used to flexibly validate any possible text string combination.
+For instance regex is used to check that a valid e-mail id is entered, or a valid phone number, or password.
+
+**form logic** is the core reason why the XForms/XLSForms format, used by both ODK and Kobo are so indispensable. It sets apart
+these tools from simpler survey form builders such as Google forms. If the survey you have in mind is more complex in logic
+you will likely need to choose ODK/Kobo over Google forms. Form logic offers 
+the possibility of applying conditions which may result in a True or False answer based on responses to previously inputted
+questions. The syntax for form logic rules largely overlaps with the syntax for response validation.  Hence all the examples shown
+above for response validation can be used as a logical rule to decide whether or not a question, or group of questions should be 
+displayed.
+
+## 1.6 Dynamic calculations
+ODK Build and Kobo Build allow for dynamically calculated fields which allow use of these inputted variables to change the values 
+or logic of subsequent parts of the form. Google Forms presently doesn't have this feature.
+
+
+## 1.7 Survey templates
+None of the three choices for Form Builders offer ready-to-use templates, but each of them offer the feature to create your own
+library of questions or templates, which can be reused.
+
+## 1.8 Multi-lingual forms
+ODK Build and Kobo Build offer the possibility of forms simultaneously made in multiple languages. An enumerator can hence switch
+a form from one language to another as convenient. Google Forms does not offer any features for switching the language of a form.
+A workaround would be to display both languages simultaneously, however, this can make the forms appear long and cumbersome.
