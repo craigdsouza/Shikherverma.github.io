@@ -1,7 +1,7 @@
 ---
 layout: post
 title : "Survey form creation"
-subtitle : "choosing between ODK, Kobo, Google Forms"
+subtitle : "choosing between the ODK/KoboToolbox & Google Forms"
 date: 2020-08-06 09:14:00
 author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
@@ -13,22 +13,34 @@ image_sliders:
 ---
 
 Data collection platforms consist of multiple components
-1. form/survey builders
+1. survey form formats & builders
 - form validation
 2. data collection app
 3. data storage
 4. data visualization
 
-In this post we will cover form/survey builders, and do a pointwise comparison of three major free alternatives, ODK, Kobo, Google Forms.
+In this post we will cover survey form formats & form builders, and do a pointwise comparison of the major free alternatives, 
+Open Data Kit(ODK)/KoboToolbox & Google Forms.
 Future blogposts may go into detail on each of these individually. I considered Survey Monkey too, but it's use cases are focused heavily 
 on companies and market research, which would take this blogpost off on a tangent, and hence I chose to leave it out for now. 
 
-Also note that the comparison being made between ODK Build and Kobo Build can be misleading. Both ODK Build and Kobo Build create forms
+# 0. Survey Form formats
+XForms is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
+or Kobo Build. Another way to create XForms is by first creating XLSForms, and then converting these to XForms using appropriate [tools](https://getodk.org/xlsform/)
+XLSForms are in fact analogous to XForms, except that they can be read and created in Microsoft Excel or other spreadsheet softwares and
+hence simplify the form creation process, especially for longer forms. <br> 
+Note that the comparison being made below between ODK Build and Kobo Build can be misleading. Both ODK Build and Kobo Build create forms
 in the same format, XForms or XLSForms, hence ultimately the set of features both forms can theoretically provide is identical. The only
 distinction comes in because the form builders are designed differently, hence adding some features may be easier in ODK Build as compared
-to Kobo Build or vice-versa.
+to Kobo Build or vice-versa.<br>
+Google Forms, in contrast are a proprietary format, that can only be created using a web browser and forms.google.com
 
-# 1. An overview of the features of form builders
+|![XForms/XLSForms](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/0_xform_xlsform.jpg)|
+|:--:|
+| 0. XForms/XLSForms |
+
+
+# 1. An overview of the features of Form Builders
 software that helps create surveys falls under the category of form builders. Listed here are some core features, each of which is explained in
 further detail in sections below. 
 - **Desktop/Web** : Some platforms have dedicated desktop software for form creation, this enables users to create forms offline, whereas others 
@@ -49,7 +61,7 @@ substitute feature , 'question libraries'.
 - **Multi-lingual support**: this feature allows the same form to be created in multiple language formats for different audiences.
 
 *tables in this document contain either ✅ or ❌ or ~ or limited*
-* the first indicates the feature is possible, using the UI selections only, the second indicates the feature isn't possible at all
+* the first indicates the feature is possible, using the UI , the second indicates the feature isn't possible at all
 the third indicates the feature is possible, but only with workarounds, or knowledge of syntax, which can be non-intuitive at times,
 the last simply indicates a limited subset of the features is possible.*
 *one might need to scroll left-right on mobile devices to view tables in this post*
@@ -77,16 +89,16 @@ In comparison, ODK and Kobo allow form logic based on responses to text and nume
 
 ## 1.1 Desktop/Web
 Here's a preview of what building a form in each of the builders looks like. ODK Build pictured here is the desktop tool,
-(a web tool is also available), whereas Kobo and Google Forms can only be created using a web browser. 
+(a similar web tool is also available), whereas Kobo and Google Forms can only be created using a web browser. 
 Purely from a user experience perspective Google Forms has an advantage, you simply have to type in your question and it 
 auto-detects the type of question, whether *text*, *numeric*, *date* or *multiple choice*. 
-Kobo and ODK Build are also fairly simple to use, offering intuitive user interfaces, in the case of Kobo by hiding away some 
-of the more technical terms under *settings* for each question, whereas ODK Build has a panel on the right for each questions' settings. 
+Kobo and ODK Build are also fairly simple to use, offering intuitive user interfaces. Kobo hides away some 
+of the more technical terms under *settings* for each question, and ODK Build has a panel on the right for each questions' settings. 
 Both UIs have drag and drop functionality as well.
 
 Moreover, if one wishes to avoid form builders altogether and build survey forms (XLSForms) in Microsoft Excel, as I enjoy,
-that is possible too, if one gains familiarity with the conventions involved there are definite advantages to building XLSForms
-in Excel, though for beginners, using a Form Builder is an easy way to get started.
+that is possible too, if one gains familiarity with the formats there are definite advantages to building XLSForms in Excel, 
+though for beginners, using a Form Builder is an easy way to get started.
 
 {% include slider.html selector="form_builders_1" %}
 
@@ -113,7 +125,7 @@ acknowledge (prompts) , barcodes/QR codes, and calculate (dynamic variables)
 [1] google forms doesn't allow media(image/audio/video) entries directly, but it can be facilitated indirectly by using the 'file' input
 this is less than ideal however especially if a form has multiple media entries, an enumerator must take these photos/audio/video separately
 and then remember filenames and locations for entry later on.<br>
-[2] similarly acknowledge (prompts) is also something google forms doesn't directly allow, but this can be implemented using a simple
+[2] similarly acknowledge (to prompts) is also something google forms doesn't directly allow, but this can be implemented using a simple
 multiple choice question with select_one input.<br>
 
 **metadata questions** can be useful for instance to identity submissions based on the enumerator's id or a device id.
@@ -125,16 +137,17 @@ While the fundamental question types have been listed above, form builders also 
 ODK Build still lacks in options for creating multiple composite question types, hence if you need some of these, 
 you could consider Kobo Build/Google forms or building forms from scratch in XLSForms format.
 
-Examples of some of these composite questions are listed below. When combining several questions ODK & Kobo Build use groups, 
+Examples of some of these composite questions are listed below. When combining several questions ODK & Kobo Build use groups.
+Groups are simply several questions under one name, using which similar rules can be applied to an entire group at once.
 
-| composite question types                          |    ODK Build    |    Kobo Build    |    Google Forms    |
+| composite question types                          |    ODK Build    |    Kobo Build    |    Google Forms    |  |
 |:--:|:--:|:--:|:--:|
-| range                                   | ~  | ✅ | ❌ |
-| ranking                                 | ~  | ✅ | ✅ |
-| multiple choice grid / rating           | ~  | ✅ | ✅ |
-| checkbox grid                           | ~  | ~  | ✅ |
-| table/matrix of questions               | ~  | ✅ | ✅ |
-| cascading selects                       | ~  | ✅ | ❌ |
+| range                                   | ~  | ✅ | ❌ |![range](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_range.jpg)|
+| ranking                                 | ~  | ✅ | ✅ |![ranking](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_ranking.jpg )|
+| multiple choice grid / rating           | ~  | ✅ | ✅ |![multiple choice grid](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_mcgrid.jpg)|
+| checkbox grid                           | ~  | ~  | ✅ |![checkbox grid](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_checkboxgrid.jpg)|
+| table/matrix of questions               | ~  | ✅ | ✅ |![question matrix](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_matrix.jpg)|
+| cascading selects                       | ~  | ✅ | ❌ |![cascading select](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_3_cascading.jpg)|
 
 [1] range is simply an **integer** input with restrictions on the range of integers<br>
 [2] ranking is simply a **group of select_one** questions that use one list of choices, with the rule applied that each choice is 
@@ -189,7 +202,6 @@ displayed.
 ## 1.6 Dynamic calculations
 ODK Build and Kobo Build allow for dynamically calculated fields which allow use of these inputted variables to change the values 
 or logic of subsequent parts of the form. Google Forms presently doesn't have this feature.
-
 
 ## 1.7 Survey templates
 None of the three choices for Form Builders offer ready-to-use templates, but each of them offer the feature to create your own
