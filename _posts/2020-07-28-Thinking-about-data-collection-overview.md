@@ -117,14 +117,14 @@ had to estimate the average level of schooling achieved among adults in the comm
 estimating a proportion whereas in the second case you would estimate a mean. The formula required to calculate sample size to in both scenarios is different.
 
 
-To dive into details, here are a few useful resources if you wish to study further:
+To dive into details, here are a few useful resources if you wish to study further:<br>
 [1] [Introduction to Survey Research] (https://medium.com/swlh/an-introduction-to-survey-research-ba9e9fb9ca57) 
-(comprehensive, yet concise, overview of sampling strategies, pictographic explanations, a framework explaining survey errors)
+(comprehensive, yet concise, overview of sampling strategies, pictographic explanations, a framework explaining survey errors)<br>
 [2] [Sampling Techniques & Determination of Sample Size in Applied Statistics Research: An Overview] 
 (http://ijecm.co.uk/wp-content/uploads/2014/11/21131.pdf) (useful, but somewhat dense, includes descriptions of different sampling strategies , and 
-a guide on how to calculate sample size manually for different scenarios)
+a guide on how to calculate sample size manually for different scenarios)<br>
 [3] [Research Methods] (https://conjointly.com/kb/sampling-in-research/) (most useful resource, detailed, but not overwhelming explanations,
-examples used to explain each type)
+examples used to explain each type)<br>
 tools: [website with Sample size calculators](https://epitools.ausvet.com.au/)
 
 
@@ -133,7 +133,7 @@ tools: [website with Sample size calculators](https://epitools.ausvet.com.au/)
 | 6. Sampling |
 
 
-* I'm writing this piece based on my experience working with non-profits in the development sector and research on the subject. 
+*Note: I'm writing this piece based on my experience working with non-profits in the development sector and research on the subject. 
 My experience and research has been limited to quantitative data collection to understand impact, qualitative data hasn't been covered here, 
 but I welcome inputs from others who would like to co-write something on qualitative data. 
 
