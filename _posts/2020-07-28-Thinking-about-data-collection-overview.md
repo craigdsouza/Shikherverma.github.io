@@ -1,7 +1,7 @@
 ---
 layout: post
 title : "Thinking about data collection"
-subtitle : "Part 1 - an overview"
+subtitle : "an Overview"
 date: 2020-07-28 14:57:00
 author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
@@ -11,9 +11,9 @@ category: "blog"
 ---
 Thinking systematically about data collection within organisations in the development space is essential, however it often doesn't
 get the required attention. Data collection may be required to 1) assess longer term progress towards organisational goals or 2) simply
-to record day-to-day activities/operations an organisation carries out. The degree of planning & statistical rigour needed for each is very different. 
-This article outlines what one must think about when collecting data to assess long term progress, which is the more intensive of the two
-data collection efforts
+to record day-to-day activities/operations an organisation carries out. The degree of planning & statistical rigour needed for 
+each is very different. This article outlines what one must think about when collecting data to assess long term progress, 
+which is the more intensive of the two data collection efforts
 
 # 1. The bigger picture
 Data collection to assess progress should be closely connected with the purpose of an organization and it's programmes and should evolve with it.
@@ -46,13 +46,13 @@ for instance, here 'the percentage of the recommended dietary allowance (RDA) fo
 
 # 3. Surveys
 Once indicators are established we think about systematic surveys to capture the effect of outcomes. Surveys can be developed from scratch , 
-but in many cases, especially for themes that are well studied, pre-developed and validated surveys are readily available.
+but in many cases, especially for themes that are well studied, pre-developed and validated surveys are readily available.<br><br>
 If such surveys don't readily exist, one has to carefully consider the data points to be collected. Besides capturing just the outcome indicators,
 surveys should also collect explanatory variables for variations in the population. These could vary depending on the goal, however some common
-data points are age, gender, weight and any data that captures variation in the application of the intervention. For instance this could be 
-whether school attendance is poor, which could explain low Hb levels, since the child in question would miss their mid-day meal and RDA for iron.
+data points are `age`, `gender` or any data that captures variation in the application of the intervention. For instance this could be 
+whether school attendance is poor, which could explain low Hb levels, since the child in question would miss their mid-day meal and RDA for iron.<br><br>
 Special attention should be paid to which questions could lead to erroneous answers, either because a respondent doesn't wish to answer truthfully
-or because memory errors could lead to erroneous results. 
+or because memory errors could lead to erroneous results. Questions such as these should have a "Don't know" response option. 
 
 |![Surveys - What to include](/img/posts/2020-07-28-thinking-about-data-coll-overview/3_surveys.jpg)|
 |:--:|
@@ -66,7 +66,10 @@ Surveyors may still choose to use paper surveys. Even if this is the case, it is
 to indicate choice of an answer. These responses can then more easily be recorded in digital formats using OCR technologies than if the paper format was ad hoc
 and inconsistent.
 
-If the choice is to go for digital data entry, a few main points should be taken into consideration. 
+If the choice is to go for digital data entry, a few main points should be taken into consideration. Ensure that enumerators
+are well trained on the tools (apps) they will use for data collection. Choosing apps that work offline should be a priority.
+It should be possible to save submissions that are incomplete. The data collection app should allow for creating surveys questions
+and applying form logic as desired. Check out this [post](https://craigdsouza.github.io/blog/data-coll-choices-survey-form-creation) on survey form creation for more details.
 
 |![Technical considerations](/img/posts/2020-07-28-thinking-about-data-coll-overview/4_technical_considerations.jpg)|
 |:--:|
@@ -114,7 +117,7 @@ had to estimate the average level of schooling achieved among adults in the comm
 estimating a proportion whereas in the second case you would estimate a mean. The formula required to calculate sample size to in both scenarios is different.
 
 
-Meanwhile here are a few useful resources if you wish to study further:
+To dive into details, here are a few useful resources if you wish to study further:
 [1] [Introduction to Survey Research] (https://medium.com/swlh/an-introduction-to-survey-research-ba9e9fb9ca57) 
 (comprehensive, yet concise, overview of sampling strategies, pictographic explanations, a framework explaining survey errors)
 [2] [Sampling Techniques & Determination of Sample Size in Applied Statistics Research: An Overview] 
@@ -127,7 +130,7 @@ tools: [website with Sample size calculators](https://epitools.ausvet.com.au/)
 
 |![Sampling](/img/posts/2020-07-28-thinking-about-data-coll-overview/6_sampling.jpg)|
 |:--:|
-| 5. Sampling |
+| 6. Sampling |
 
 
 * I'm writing this piece based on my experience working with non-profits in the development sector and research on the subject. 

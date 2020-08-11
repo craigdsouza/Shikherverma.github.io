@@ -27,7 +27,7 @@ on companies and market research, which would take this blogpost off on a tangen
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
 or Kobo Build. Another way to create XForms is by first creating XLSForms, and then converting these to XForms using appropriate [tools](https://getodk.org/xlsform/)
 XLSForms are in fact analogous to XForms, except that they can be read and created in Microsoft Excel or other spreadsheet softwares and
-hence simplify the form creation process, especially for longer forms. <br> 
+hence simplify the form creation process, especially for longer forms. Dive into details [here](http://xlsform.org/)<br> 
 Both ODK Build and Kobo Build create forms in the same format, XForms or XLSForms, hence ultimately the set of features both forms can 
 theoretically provide is identical. The onlydistinction comes in because the form builders are designed differently, hence adding some 
 features may be easier in ODK Build as compared to Kobo Build or vice-versa. Google Forms, in contrast are a proprietary format, 
