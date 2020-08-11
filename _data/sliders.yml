@@ -8,6 +8,8 @@
       alt: Kobo Form Builder
     - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_gforms.PNG
       alt: Google Forms
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_xlsform.PNG
+      alt: Builing forms in Spreadsheet software
   settings:
     height: "'auto'"
     effect: "'fade'"
