@@ -108,7 +108,7 @@ though for beginners, using a Form Builder is an easy way to get started.
 date, time, date+time, geo(point/trace/shape), media (image/audio/video), files, note, acknowledge (to a prompt), 
 barcode/QR Code inputs, and calculate. Of these google forms has the functionality for all except geo(point/trace/shape), media, 
 acknowledge (prompts) , barcodes/QR codes, and calculate (dynamic variables)
- 
+
 | question types                          |    ODK Build    |    Kobo Build    |    Google Forms    |
 |:--:|:--:|:--:|:--:|
 | text                                    | ✅ | ✅ | ✅ |

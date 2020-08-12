@@ -10,35 +10,31 @@ tags: [ data, surveys, impact ]
 category: "blog"
 ---
 Thinking systematically about data collection within organisations in the development space is essential, however it often doesn't
-get the required attention. Data collection may be required to 1) assess longer term progress towards organisational goals or 2) simply
-to record day-to-day activities/operations an organisation carries out. The degree of planning & statistical rigour needed for
-each is very different. This article outlines what one must think about when collecting data to assess long term progress,
-which is the more intensive of the two data collection efforts
+get the required attention. Data collection may be required to
+1) assess longer term progress towards organisational goals or
+2) simply to record day-to-day activities/operations an organisation carries out. <br>
+The degree of planning & statistical rigour needed for each is very different. This article outlines what one must think about when collecting data to assess long term progress, which is the more intensive of the two data collection efforts.
 
 # 1. The bigger picture
 Data collection to assess progress should be closely connected with the purpose of an organization and it's programmes and should evolve with it.
-Often in practice however these two get de-linked. Surveys are developed for data collection based on templates that
-are at hand. Finally when data analysis is undertaken to understand impact the mismatch is evident. Often data collected doesn't
-speak to the goals or is irrelevant/redundant or worst of all misleading. Hence, foremost, adequate thought should go into the
-articulation of purpose/goals. Staff within the organization, from head to field persons, must understand and agree on these.
+Often in practice however these two get de-linked. Surveys are developed for data collection based on templates that are at hand. Finally when data analysis is undertaken to understand impact the mismatch is evident. Often data collected doesn't speak to the goals or is irrelevant/redundant or worst of all misleading. Hence, foremost, adequate thought should go into the articulation of purpose/goals. Staff within the organization, from head to field persons, must understand and agree on these.
 
 |![Link between data collection and goals](/img/posts/2020-07-28-thinking-about-data-coll-overview/1_link.gif)|
 |:--:|
 | 1. Link between data collection and goals |
 
 # 2. Goals are not enough, we need outcomes and indicators
-If my goal is to shorten my travel time, I must determine an outcome that will lead to the desired goal. An outcome is chosen,
-wherein prior research indicates a causal link between outcome and goal. One outcome that could lead there is to build a faster car.
-It's possible in this case to directly measure progress towards the goal (i.e. travel time in minutes/hours) or indirectly by
-measuring progress on the outcome (i.e. speed of car in mph).
-There is little debate on what the indicators for progress could be.<br>
+If my *goal* is to *shorten my travel time*, I must determine an outcome that will lead to the desired goal. An *outcome* is chosen,
+wherein prior research indicates a causal link between outcome and goal. One outcome that could lead there is to *build a faster car*.
+It's possible in this case to directly measure progress towards the goal (i.e. `travel time in minutes/hours`) or indirectly by
+measuring progress on the outcome (i.e. `speed of car in mph`). There is little debate on what the indicators for progress could be.
 
-If my goal however is to improve a community's health, it's far from certain how to measure progress. Perhaps, 'prevalence of illness' is one indicator.
+If my *goal* however is to *improve a community's health*, it's far from certain how to measure progress. Perhaps, `prevalence of illness` is one indicator.
 Or number of sick days per month? However these indicators are comparatively difficult to measure compared to indicators of having achieved an outcome.
-In this case for instance, an outcome could be better sleep, or better nutrition, both of which are strongly correlated with good health. Indicators for
+In this case for instance, *an outcome* could be better sleep, or better nutrition, both of which are strongly correlated with good health. Indicators for
 having achieved these outcomes could be a score on a sleep survey, or medical tests to determine the effect of nutrition, e.g. Hb test to measure
 progress towards lower iron deficiency. In some cases, direct measurement of the indicator is not possible, in which case a proxy is measured,
-for instance, here 'the percentage of the recommended dietary allowance (RDA) for iron' being met.
+for instance, here `the percentage of the recommended dietary allowance (RDA) for iron` being met.
 
 |![Goals < Outcomes (Indicators)](/img/posts/2020-07-28-thinking-about-data-coll-overview/2_toc.gif)|
 |:--:|
