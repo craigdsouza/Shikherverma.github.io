@@ -24,7 +24,7 @@ Table of Contents
 5. [Training of Surveyors](#5-training-of-surveyors)
 6. [Sampling](#6-sampling)
 
-#1. The bigger picture
+# 1. The bigger picture
 Data collection to assess progress should be closely connected with the purpose of an organization and it's programmes and should evolve with it.
 Often in practice however these two get de-linked. Surveys are developed for data collection based on templates that are at hand. Finally when data analysis is undertaken to understand impact the mismatch is evident. Often data collected doesn't speak to the goals or is irrelevant/redundant or worst of all misleading. Hence, foremost, adequate thought should go into the articulation of purpose/goals. Staff within the organization, from head to field persons, must understand and agree on these.
 
@@ -32,7 +32,7 @@ Often in practice however these two get de-linked. Surveys are developed for dat
 |:--:|
 | 1. Link between data collection and goals |
 
-#2. Goals are not enough, we need outcomes and indicators
+# 2. Goals are not enough, we need outcomes and indicators
 If my *goal* is to *shorten my travel time*, I must determine an outcome that will lead to the desired goal. An *outcome* is chosen,
 wherein prior research indicates a causal link between outcome and goal. One outcome that could lead there is to *build a faster car*.
 It's possible in this case to directly measure progress towards the goal (i.e. `travel time in minutes/hours`) or indirectly by
@@ -49,7 +49,7 @@ for instance, here `the percentage of the recommended dietary allowance (RDA) fo
 |:--:|
 | 2. Goals < Outcomes (Indicators) |
 
-#3. Surveys
+# 3. Surveys
 Once indicators are established we think about systematic surveys to capture the effect of outcomes. Surveys can be developed from scratch , but in many cases, especially for themes that are well studied, pre-developed and validated surveys are readily available.
 
 If such surveys don't readily exist, one has to carefully consider the data points to be collected. Besides capturing just the outcome indicators, surveys should also collect explanatory variables for variations in the population. These could vary depending on the goal, however some common data points are `age`, `gender` or any data that captures variation in the application of the intervention. For instance this could be whether school attendance is poor, which could explain low Haemoglobin levels, since the child in question would miss their mid-day meal and RDA for iron.
@@ -62,7 +62,7 @@ or because memory errors could lead to erroneous results. Questions such as thes
 | 3. Surveys - What to include |
 
 
-#4. Technical considerations
+# 4. Technical considerations
 A brief note on technical considerations is given here. However these will be elaborated on in a separate article.
 
 Surveyors may still choose to use paper surveys. Even if this is the case, it is beneficial to use tabular formats to capture responses and consistent notations to indicate choice of an answer. These responses can then more easily be recorded in digital formats using OCR technologies than if the paper format was ad hoc and inconsistent.
@@ -74,7 +74,7 @@ If the choice is to go for digital data entry, a few main points should be taken
 | 4. Technical considerations |
 
 
-#5. Training of Surveyors
+# 5. Training of Surveyors
 The first step in training surveyors is ensuring that the objective of the survey is well understood. Beyond this it is important to ensure appropriate
 training in how to approach survey respondents and ask survey questions. A few simple pointers to keep in mind would be
 - sampling criteria should be well understood, see next section
@@ -91,14 +91,14 @@ training in how to approach survey respondents and ask survey questions. A few s
 - ensure individual's contact details are obtained if the survey is longitudinal in nature
 
 
-#6. Sampling
+# 6. Sampling
 This post does not go very deep into sampling strategies, but it is a subject I'm keenly interested in and I hope to write more on this soon.
 
 Sampling starts with determination of the unit for making an assessment. For example, the unit of the respondent may be a household or individual.
 However the unit of assessment/ study may be district level/block level/ neighbourhood level and so on. The total population would hence be determined
 at the level of unit of assessment.
 
-## Sampling strategies
+## 6.1 Sampling strategies
 sampling strategies broadly fall into either *probability sampling* or *non probability sampling*, each of which is further subdivided into sub-categories.
 Depending on constraints you would choose one of the two. *Non probability sampling* may be chosen in early stages of exploratory research, in qualitative
 research or in studies where the target is a specific sub-population; for example, feedback surveys employ nonprobability sampling. These techniques can
@@ -107,7 +107,7 @@ help confirm, but not rule out hypotheses since it isn't representative of the e
 so that every individual has some non-zero chance of being surveyed. Probability sampling also requires more time and is more resource intensive. The main
 advantage of probability sampling is that it allows extrapolation of estimates developed from a small sample to a entire population.
 
-## Sample size
+## 6.2 Sample size
 [Epitools](https://epitools.ausvet.com.au/samplesize) has excellent tools with explanations for calculation of sample size under different circumstances.
 The most common scenario is one where a *single proportion (categorical variable)* or *single mean (continuous variable)* has to be estimated. For
 instance if one has to estimate the `proportion of adults in a community with at least high school education`, this is a *categorical variable* and if one
