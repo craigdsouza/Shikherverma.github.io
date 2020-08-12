@@ -4,6 +4,7 @@ default_author: Craig Dsouza
 author: Craig Dsouza
 description: All things me, personal + professional (Open data, Data Collection, GIS/RS)  # used in site head
 keywords: GIS, RS, Open data, ODK, web-scraping
+baseurl: https://craigdsouza.github.io/
 
 # register on google analytics and replace this token
 google_analytics: UA-78353942-2
@@ -40,7 +41,7 @@ port: 8888
 permalink: /:categories/:title
 
 # jekyll-paginate. for paginating blog posts.
-paginate: 5
+paginate: 10
 paginate_path: blog/page:num
 
 # gem dependencies
