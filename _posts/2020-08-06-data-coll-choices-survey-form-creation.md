@@ -7,8 +7,8 @@ author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
 comments: true
 tags: [ odk, kobo, google-forms ]
-category: "blog"
-theme: "data-how-tos"
+category: blog
+theme: data-how-tos
 image_sliders:
   - form_builders_1
 ---

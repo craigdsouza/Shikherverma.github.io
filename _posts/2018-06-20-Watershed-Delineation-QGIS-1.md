@@ -6,7 +6,7 @@ date: 2018-06-20 12:00:00
 author: "Craig Dsouza"
 header-img: "img/posts/wdq1/post-bg.jpg"
 comments: true
-tags: [ hydrology, dem, river-basin]
+tags: [hydrology, dem, river-basin]
 category: blog
 theme: gis
 ---

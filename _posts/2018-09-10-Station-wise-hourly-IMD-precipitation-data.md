@@ -7,8 +7,8 @@ author: "Craig Dsouza"
 header-img: "img/posts/imdaws/banner.png"
 comments: true
 tags: [hydrology, precipitation]
-category: "blog"
-theme: "scraping"
+category: blog
+theme: scraping
 ---
 
 p.s.: this page of the Indian Meteorological Department is no longer active however data I pulled from their website for the 2018 monsoon can still be accessed under the datasets tab.

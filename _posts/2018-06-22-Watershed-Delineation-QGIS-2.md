@@ -6,9 +6,9 @@ date: 2018-06-22 12:00:00
 author: "Craig Dsouza"
 header-img: "img/posts/wdq1/post-bg.jpg"
 comments: true
-tags: [ hydrology, dem, river-basin]
-category: "blog"
-theme: "gis"
+tags: [hydrology, dem, river-basin]
+category: blog
+theme: gis
 ---
 
 We ended the last post having split the area of Ken river's basin from the larger Ganga-Brahmaputra river basin. We did this because for further analyses we want to identify Ken river's watersheds and working within the smaller region allows the analyses to be more efficient. Moreover we also will attempt to use a higher resolution DEM (Cartosat) which is 30 m instead of 1 km to allow us to identify smaller streams. This means the new DEM has more than a thousand pixels for every pixel of the lower resolution GTOPO DEM. This has the potential to significantly increase the time taken for processing.
