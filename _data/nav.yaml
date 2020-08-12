@@ -1,0 +1,19 @@
+- title: home
+  url: /
+- title: blog
+  url: /blog/
+- title: themes
+  url: /themes/
+  sublinks:
+    - title: data how-tos
+      url: /themes/data-how-tos/
+    - title: scraping
+      url: /themes/scraping/
+    - title: gis
+      url: /themes/gis/
+    - title: remote sensing
+      url: /themes/remote-sensing/
+- title: datasets
+  url: /pages/datasets/
+- title: trainings
+  url: /pages/trainings/
