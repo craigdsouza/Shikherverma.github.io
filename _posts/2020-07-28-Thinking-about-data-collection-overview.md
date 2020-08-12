@@ -11,8 +11,8 @@ category: ["blog","data-how-tos"]
 ---
 Thinking systematically about data collection within organisations in the development space is essential, however it often doesn't
 get the required attention. Data collection may be required to
-1) assess longer term progress towards organisational goals or
-2) simply to record day-to-day activities/operations an organisation carries out. <br>
+1. assess longer term progress towards organisational goals or
+2. simply to record day-to-day activities/operations an organisation carries out. <br>
 The degree of planning & statistical rigour needed for each is very different. This article outlines what one must think about when collecting data to assess long term progress, which is the more intensive of the two data collection efforts.
 
 Table of Contents
