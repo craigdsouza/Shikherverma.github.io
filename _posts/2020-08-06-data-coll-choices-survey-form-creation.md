@@ -25,7 +25,14 @@ Table of Contents
 ===================
 0. [Survey Form formats](#0-survey-form-formats)
 1. [An Overview of the features of form builders](#1-an-overview-of-the-features-of-form-builders)
-   a. [Desktop & Web formats](#1a-desktop-and-web)
+   1. [Desktop & Web formats](#1a-desktop-and-web)
+   2. [Question types & Metadata questions](#1b-question-types-and-metadata-questions)
+   3. [Composite questions, Groups and Repeats](#1c-composite-questions-groups-and-repeats)
+   4. [Response Validation and Form Logic](#1d-response-validation-and-form-logic)
+   5. [Dynamic calculations](#1e-dynamic-calculations)
+   6. [Survey templates](#1f-survey-templates)
+   7. [Form styling](#1g-form-styling)
+   8. [Multi-lingual forms](#1f-multi-lingual-forms)
 
 # 0. Survey Form formats
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
@@ -107,7 +114,7 @@ though for beginners, using a Form Builder is an easy way to get started.
 
 {% include slider.html selector="form_builders_1" %}
 
-## 1.2 Question types/Metadata questions
+## 1b. Question types and Metadata questions
 **Fundamental question (widget) types** in ODK and Kobo Build include text, integer, decimal, multiple choice(select_one, select_multiple),
 date, time, date+time, geo(point/trace/shape), media (image/audio/video), files, note, acknowledge (to a prompt),
 barcode/QR Code inputs, and calculate. Of these google forms has the functionality for all except geo(point/trace/shape), media,
@@ -119,8 +126,8 @@ acknowledge (prompts) , barcodes/QR codes, and calculate (dynamic variables)
 | integer, decimal                        | ✅ | ✅ | ✅ |
 | select_one, select_multiple (multiple-choice)            | ✅ | ✅ | ✅ |
 | date, time                              | ✅ | ✅ | ✅ |
-| geopoint,geotrace,geoshape              | ✅ | ✅ | ❌ |
-| image,audio,video [1]                   | ✅ | ✅ | ~  |
+| geopoint, geotrace, geoshape            | ✅ | ✅ | ❌ |
+| image, audio, video [1]                 | ✅ | ✅ | ~  |
 | file                                    | ✅ | ✅ | ✅ |
 | note                                    | ✅ | ✅ | ✅ |
 | acknowledge (a prompt) [2]              | ✅ | ✅ | ~  |
@@ -137,7 +144,7 @@ multiple choice question with select_one input.<br>
 ODK Build and Kobo both offer `start time`, `end time`, `date`, `device id`, `username`, `simserial`, `subscriberid`, `phonenumber` as metadata fields,
 whereas Kobo also offers the audit metadata field, in ODK Build this isn't available. Google Forms doesn't offer any metadata fields.
 
-## 1.3 Composite questions, Groups and Repeats
+## 1c. Composite questions, Groups and Repeats
 While the fundamental question types have been listed above, form builders also offer **composite question types**.
 ODK Build still lacks in options for creating multiple composite question types, hence if you need some of these,
 you could consider Kobo Build/Google forms or building forms from scratch in XLSForms format.
@@ -170,7 +177,7 @@ of times as the scenario demands. For instance if a set of questions (height, we
 then repeats allow for the height and weight questions to be repeated as many times as there are children in the classroom, without knowing
 this number in advance.
 
-## 1.4 Response Validation & Form Logic
+## 1d. Response Validation and Form Logic
 **response validation** can be applied for text, numeric, and select_multiple questions. With numbers, response validation can be based on
 numeric tests, for example the response captured should be less than or greater than a given fixed value, or another value captured by the form. <br>
 With text, response validation could be used to limit length of a text string, or check if the string is equal to another string or contains a substring.
@@ -204,7 +211,7 @@ questions. The syntax for form logic rules largely overlaps with the syntax for 
 above for response validation can be used as a logical rule to decide whether or not a question, or group of questions should be
 displayed.
 
-## 1.6 Dynamic calculations
+## 1e. Dynamic calculations
 ODK Build and Kobo Build allow for dynamically calculated fields which allow use of these inputted variables to change the values
 or logic of subsequent parts of the form. Google Forms presently doesn't have this feature.
 
@@ -212,15 +219,15 @@ or logic of subsequent parts of the form. Google Forms presently doesn't have th
 |:--:|
 | An example "calculate" question (Source: Kobo Toolbox) |
 
-## 1.7 Survey templates
+## 1f. Survey templates
 None of the three choices for Form Builders offer ready-to-use templates, but each of them offer the feature to create your own
 library of questions or templates, which can later be imported and reused.
 
-## 1.8 Form styling
+## 1g. Form styling
 If Survey Forms are made in XLSForm format, using spreadsheet software then styling questions, their text (font, color, positioning)
 is possible.
 
-## 1.9 Multi-lingual forms
+## 1h. Multi-lingual forms
 ODK Build and Kobo Build offer the possibility of forms simultaneously made in multiple languages. An enumerator can hence switch
 a form from one language to another as convenient. Google Forms does not offer any features for switching the language of a form.
 A workaround would be to display both languages simultaneously, however, this can make the forms appear long and cumbersome.
