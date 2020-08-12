@@ -1,14 +1,17 @@
 ---
 layout: post
-title : "Station-wise,Hourly rainfall data from IMD now available"
+title : "Station-wise, Hourly rainfall data from IMD now available"
 subtitle : "see it to believe it!"
 date: 2018-09-10 12:00:00
 author: "Craig Dsouza"
 header-img: "img/posts/imdaws/banner.png"
 comments: true
-tags: [ hydrology,precipitation]
+tags: [hydrology, precipitation]
 category: "blog"
+theme: "scraping"
 ---
+
+p.s.: this page of the Indian Meteorological Department is no longer active however data I pulled from their website for the 2018 monsoon can still be accessed under the datasets tab.
 
 # 1. In Brief
 The Indian Meteorological Department (IMD) which has for long refrained from openly publishing its station-wise precipitation data is now doing so.
@@ -16,7 +19,7 @@ I recently came across their new web app: [http://aws.imd.gov.in/](http://aws.im
 table of hourly precipitation for all stations in the state. Preview can be seen in Fig.1 below.  
 
 > **Clarification**: the web-app still does not allow downloads, only viewing. Downloads I assume are only for government access, however we're now archiving the web-app's data
-so it can be downloaded by anyone (For more details on how, read section 2 on this page). Please see this [link](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data) 
+so it can be downloaded by anyone (For more details on how, read section 2 on this page). Please see this [link](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data)
 for the archived hourly data for all states. As of now, the data available is for the months **June**,**July**,**August**,2018 for the **ARG** and **AWS** station types.
 
 |![Preview of IMD AWS Web App](/img/posts/imdaws/data-preview.PNG)|
@@ -38,14 +41,14 @@ web app was also available more than 2 years ago, after which it was taken down.
 # 2. Challenges that remain
 A couple of issues still remain however. One, although the web app provides the names of the stations, it doesn't provide a location. There are a few
 ways this issue can be resolved, perhaps by scraping the locations of the stations from the 'Data on map' page of the web app. Or by matching station names
-available here with other lists of station names (with geolocation) available on the IMD's main website. Secondly, an issue that remains is that the data 
+available here with other lists of station names (with geolocation) available on the IMD's main website. Secondly, an issue that remains is that the data
 provided here can only be accessed one week at a time. This is a design feature presumably to keep users from viewing excessively large tables of data that
-may cause the web app to crash. 
+may cause the web app to crash.
 
-Over the weekend I attempted a bit of web scraping for the first time to resolve this second issue. The code shared in this 
-[repository](https://github.com/craigdsouza/getRainfallData) allows users to automate the process of visiting the IMD web app and saving station data, 
-one week at a time. The plan right now is to run this code once a week and save each batch of new data that is generated and archive the records as a public 
-commons. You can access the saved data [here](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data) . The acronyms, ARG, AWS, AGRO you see are 
+Over the weekend I attempted a bit of web scraping for the first time to resolve this second issue. The code shared in this
+[repository](https://github.com/craigdsouza/getRainfallData) allows users to automate the process of visiting the IMD web app and saving station data,
+one week at a time. The plan right now is to run this code once a week and save each batch of new data that is generated and archive the records as a public
+commons. You can access the saved data [here](https://craigdsouza.github.io/data/IMD-Hourly-Precipitation-Data) . The acronyms, ARG, AWS, AGRO you see are
 the different types of weather stations operated by IMD. According to their page, there are 1351, 573 and 128 stations of each kind respectively.
 
 # 3. Potential uses of this data
@@ -55,13 +58,13 @@ base flows, and much much more.
 
 # 4. Plans ahead
 The next thing on the to-do list is to write a bit of code to access older data, that isn't directly accessible using the web app interface. Another goal is to
-develop heatmap visualizations, and integrate them into the [Open Water Data](http://water-data-web-app.appspot.com/) project, perhaps something like 
-[this](https://www.patrick-wied.at/static/heatmapjs/) Anyone wishing to collaborate on this please leave me a message! 
+develop heatmap visualizations, and integrate them into the [Open Water Data](http://water-data-web-app.appspot.com/) project, perhaps something like
+[this](https://www.patrick-wied.at/static/heatmapjs/) Anyone wishing to collaborate on this please leave me a message!
 
 # 5. How you can contribute
 If you wish to contribute but not with the code, you still can. Please share this [tool](http://aws.imd.gov.in/), and the [data archive](https://github.com/craigdsouza/getRainfallData/tree/master/data)
-widely, blog about it, attribution to the source would be much appreciated! Developing use cases for this data would be a great bonus. I am particularly keen on organizing 
-workshops around learning to use the data and developing preliminary analysis, if that interests you ping me. If you have your own weather stations please share that data too. 
+widely, blog about it, attribution to the source would be much appreciated! Developing use cases for this data would be a great bonus. I am particularly keen on organizing
+workshops around learning to use the data and developing preliminary analysis, if that interests you ping me. If you have your own weather stations please share that data too.
 The hope here is that creating more shared commons data repositories can help build capacity and break institutional silos.
 
 Will continue to post updates on this effort below.. stay tuned..
@@ -72,5 +75,3 @@ Will continue to post updates on this effort below.. stay tuned..
 - Added code repository that user can use to download data themselves.
 
 If you do download the data and analyse it mail me so I can understand its usage. Likewise if you are familiar with python and can help me archive more data, email me at craigds022@gmail.com
-
-

@@ -7,8 +7,8 @@
   sublinks:
     - title: data how-tos
       url: /themes/data-how-tos/
-#    - title: scraping
-#      url: /themes/scraping/
+    - title: scraping
+      url: /themes/scraping/
     - title: gis
       url: /themes/gis/
 #    - title: remote sensing

@@ -4,12 +4,11 @@ title: "data how tos"
 description: "blogposts on thinking about and working with data"
 header-img: "img/banner-forest.png"
 ---
-{{page.description}}
 
 {% for post in paginator.posts %}
 
 <div class="post-preview">
-	{% if post.category contains "data-how-tos" %}
+	{% if post.theme == "data-how-tos" %}
 		<a href="{{ post.url }}">
 			<h2 class="post-title">
 				{{ post.title }}

@@ -5,8 +5,9 @@ date: 2018-09-16 12:00:00
 author: "Craig Dsouza"
 header-img: "img/banner-maroon.png"
 comments: true
-tags: [ hydrology,precipitation]
-category: "open-data"
+tags: [hydrology, precipitation]
+category: "datasets"
+theme: "water"
 ---
 
 **About**: Hourly Precipitation data from IMD's Automatic Rain Gauges (**ARG**), Automatic Weather Stations (**AWS**) and Agricultural Stations (**AGRO**)

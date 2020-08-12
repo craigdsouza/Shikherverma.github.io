@@ -7,7 +7,8 @@ author: "Craig Dsouza"
 header-img: "img/posts/imis/banner.png"
 comments: true
 tags: [ surveys, theory-of-change, sampling ]
-category: ["blog","data-how-tos"]
+category: "blog"
+theme: "data-how-tos"
 ---
 Thinking systematically about data collection within organisations in the development space is essential, however it often doesn't
 get the required attention. Data collection may be required to

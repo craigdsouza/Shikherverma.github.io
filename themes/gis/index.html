@@ -4,12 +4,11 @@ title: "gis"
 description: "applications using spatial data"
 header-img: "img/banner-maroon.png"
 ---
-{{page.description}}
 
 {% for post in paginator.posts %}
 
 <div class="post-preview">
-	{% if post.category contains "gis" %}
+	{% if post.theme == "gis" %}
 		<a href="{{ post.url }}">
 			<h2 class="post-title">
 				{{ post.title }}
