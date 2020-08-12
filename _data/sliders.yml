@@ -2,13 +2,13 @@
 - selector: form_builders_1
   captions: true
   images:
-    - src: img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_odk.PNG
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_odk.PNG
       alt: ODK Build
-    - src: img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_kobo.PNG
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_kobo.PNG
       alt: Kobo Form Builder
-    - src: img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_gforms.PNG
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_gforms.PNG
       alt: Google Forms
-    - src: img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_xlsform.PNG
+    - src: /img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_1_xlsform.PNG
       alt: Builing forms in Spreadsheet software
   settings:
     height: "'auto'"
