@@ -23,7 +23,7 @@ Open Data Kit(ODK)/KoboToolbox & Google Forms. Future blogposts may go into deta
 
 0. [Survey Form formats](#0-survey-form-formats)
 1. [An Overview of the features of form builders](#1-an-overview-of-the-features-of-form-builders)
-   1.1. [Desktop/Web formats](#1.1-desktop-web)
+   1. [Desktop/Web formats](#1.1-desktop-web)
 
 # 0. Survey Form formats
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
