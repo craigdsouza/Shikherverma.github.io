@@ -4,10 +4,10 @@ title: "scraping"
 description: "getting structured data from unstructured webpages,pdf,docs"
 header-img: "img/banner-maroon.png"
 ---
-{% for post in paginator.posts %}
+{% for post in site.posts %}
 
 <div class="post-preview">
-	{% if post.theme == "scraping" %}
+	{% if post.category contains "scraping" %}
 		<a href="{{ post.url }}">
 			<h2 class="post-title">
 				{{ post.title }}
