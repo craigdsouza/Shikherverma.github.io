@@ -18,7 +18,7 @@ The degree of planning & statistical rigour needed for each is very different. T
 Table of Contents
 ===================
   * [The bigger picture: Goals](#the-bigger-picture)
-  * [Outcomes and Indicators](#outcomes-and-indicators)
+  * [Outcomes and Indicators](#goals-are-not-enough-we-need-outcomes-and-indicators)
   * [Surveys](#surveys)
   * [Technical Considerations](#technical-considerations)
   * [Training of Surveyors](#training-of-surveyors)
