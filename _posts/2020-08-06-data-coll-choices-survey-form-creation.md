@@ -19,9 +19,11 @@ Data collection platforms consist of multiple components
 - data visualization
 
 In this post we will cover survey form formats & form builders, and do a pointwise comparison of the major free alternatives,
-Open Data Kit(ODK)/KoboToolbox & Google Forms.
-Future blogposts may go into detail on each of these individually. I considered Survey Monkey too, but it's use cases are focused heavily
-on companies and market research, which would take this blogpost off on a tangent, and hence I chose to leave it out for now.
+Open Data Kit(ODK)/KoboToolbox & Google Forms. Future blogposts may go into detail on each of these individually. I considered Survey Monkey too, but it's use cases are focused heavily on companies and market research, which would take this blogpost off on a tangent, and hence I chose to leave it out for now.
+
+0. [Survey Form formats](#0-survey-form-formats)
+1. [An Overview of the features of form builders](#1-an-overview-of-the-features-of-form-builders)
+  1. [Desktop/Web formats](#1.1-desktop-web)
 
 # 0. Survey Form formats
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
