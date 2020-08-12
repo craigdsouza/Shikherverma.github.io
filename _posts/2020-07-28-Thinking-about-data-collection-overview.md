@@ -17,14 +17,14 @@ The degree of planning & statistical rigour needed for each is very different. T
 
 Table of Contents
 ===================
-1.[The bigger picture: Goals](#the-bigger-picture)
-2.[Outcomes and Indicators](#goals-are-not-enough-we-need-outcomes-and-indicators)
-3.[Surveys](#surveys)
-4.[Technical Considerations](#technical-considerations)
-5.[Training of Surveyors](#training-of-surveyors)
-6.[Sampling](#sampling)
+1. [The bigger picture: Goals](#1-the-bigger-picture)
+2. [Outcomes and Indicators](#goals-are-not-enough-we-need-outcomes-and-indicators)
+3. [Surveys](#surveys)
+4. [Technical Considerations](#technical-considerations)
+5. [Training of Surveyors](#training-of-surveyors)
+6. [Sampling](#sampling)
 
-# The bigger picture
+# 1. The bigger picture
 Data collection to assess progress should be closely connected with the purpose of an organization and it's programmes and should evolve with it.
 Often in practice however these two get de-linked. Surveys are developed for data collection based on templates that are at hand. Finally when data analysis is undertaken to understand impact the mismatch is evident. Often data collected doesn't speak to the goals or is irrelevant/redundant or worst of all misleading. Hence, foremost, adequate thought should go into the articulation of purpose/goals. Staff within the organization, from head to field persons, must understand and agree on these.
 
