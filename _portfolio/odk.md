@@ -1,9 +1,8 @@
 ---
-anchor: odk
-title: Open Data Kit
+anchor: data-how-tos
+title: Data How Tos
 image: img/portfolio/odk_logo.png
-description: Open Data Kit is a widely used open source suite of software tools for data collection and visualization. Search this blog for the tag [odk](https://craigdsouza.github.io/blog/tags/odk) to read about my learnings on its various tools.
-team: personal
-date: June 2017
-category: Data Collection
+description: Learnings from collaborations with several non-profit organisations on building data collection systems, training teams for gathering data. A lot of the technical posts revolve around Open Data Kit (ODK) which is a widely used open source suite of software tools for data collection and visualization. Visit the theme [data how tos](https://craigdsouza.github.io/themes/data-how-tos/) to read more.
+date: since June 2017
+category: data-how-tos
 ---
