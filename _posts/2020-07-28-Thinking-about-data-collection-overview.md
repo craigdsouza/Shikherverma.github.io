@@ -15,6 +15,15 @@ get the required attention. Data collection may be required to
 2) simply to record day-to-day activities/operations an organisation carries out. <br>
 The degree of planning & statistical rigour needed for each is very different. This article outlines what one must think about when collecting data to assess long term progress, which is the more intensive of the two data collection efforts.
 
+Table of Contents
+===================
+  * [The bigger picture: Goals](#the-bigger-picture)
+  * [Outcomes and Indicators](#outcomes-and-indicators)
+  * [Surveys](#surveys)
+  * [Technical Considerations](#technical-considerations)
+  * [Training of Surveyors](#training-of-surveyors)
+  * [Sampling](#sampling)
+
 # 1. The bigger picture
 Data collection to assess progress should be closely connected with the purpose of an organization and it's programmes and should evolve with it.
 Often in practice however these two get de-linked. Surveys are developed for data collection based on templates that are at hand. Finally when data analysis is undertaken to understand impact the mismatch is evident. Often data collected doesn't speak to the goals or is irrelevant/redundant or worst of all misleading. Hence, foremost, adequate thought should go into the articulation of purpose/goals. Staff within the organization, from head to field persons, must understand and agree on these.
