@@ -11,7 +11,7 @@ Browse through the list of posts below or click on one of the tags above to see 
 {% for post in paginator.posts %}
 
 <div class="post-preview">
-	{% if post.category == "blog" %}
+	{% if post.category contains "blog" %}
 		<a href="{{ post.url }}">
 			<h2 class="post-title">
 				{{ post.title }}
