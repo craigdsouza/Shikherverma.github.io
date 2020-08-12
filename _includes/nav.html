@@ -15,27 +15,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/" {% if page.url == "/" %}style="color: red;"{% endif %}>home</a>
-                </li>
-                <li>
-                    <a href="/blog/">blog</a>
-                </li>
-                <li>
-                    <a href="">pages</a>
-                    <li>
-                        <a href="/pages/how-to-data">how to data</a>
-                    </li>
-                </li>
-                <li>
-                    <a href="/pages/datasets/">datasets</a>
-                </li>
-                <li>
-                    <a href="/pages/trainings/">trainings</a>
-                </li>
-                <li>
-                    <a href="/resume/">resume</a>
-                </li>
+              {% for item in site.data.navigation %}
+              <li>
+                  <a href="{{ item.link }}" {% if page.url == item.link %}style="color: red;"{% endif %}>
+                    {{ item.title }}
+                  </a>
+              </li>
+                {% endfor %}
                 <li>
                     <a href="/search/" class="nav-search-link" title="SEARCH">
                         <span class="fa fa-search nav-search-icon"></span>
