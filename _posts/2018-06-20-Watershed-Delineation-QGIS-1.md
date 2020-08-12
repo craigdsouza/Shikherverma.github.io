@@ -6,8 +6,8 @@ date: 2018-06-20 12:00:00
 author: "Craig Dsouza"
 header-img: "img/posts/wdq1/post-bg.jpg"
 comments: true
-tags: [ hydrology,gis]
-category: "blog"
+tags: [ hydrology, dem, river-basin]
+category: ["blog","gis"]
 ---
 
 I'm going to begin with the assumption that you know what a watershed is. If you do, you would know that watersheds can vary in size. There is no strict definition for the threshold in sq.km. area or stream order that makes an area a watershed versus a micro-watershed, or a river basin. There is however general agreement that a micro-watershed < watershed < river basin in terms of area.
@@ -15,7 +15,7 @@ I'm going to begin with the assumption that you know what a watershed is. If you
 For the purposes of this post however we aren't concerned with the distinction between these definitions. Our goal is to take a freely available digital elevation model (DEM) and apply some techniques within QGIS (a FOSS software) to obtain 1) a watershed delineation and 2) a (theoretical) stream network. These two are immensely useful either to make maps for watershed planning or to use these features to build mobile/web applications. If some of these terms don't make sense at this point, don't worry, read on and use the images as a guide to understand the concepts involved. I have tried to limit the length of the post while still offering enough detail, hence had to make this a two part series.
 
 # 1. Data acquisition - Digital Elevation Model (DEM), River Basins & States of India Shapefile
-We begin with a Digital Elevation Model (DEM). A DEM is basically just a raster file where the value of each pixel represents the elevation of that area of land above Mean Sea Level (MSL). The DEM we start with is a coarse 1 km resolution Global DEM obtained from [USGS Earth Explorer](https://earthexplorer.usgs.gov/). If you wish to skip the Earth Explorer website you can directly download the same from this [link](https://www.dropbox.com/s/rjz0htoieyobnfk/gt30e060n40_dem.zip?dl=0). When you open the file in QGIS this is what you see. The white in the image indicates the highest elevations, the black indicates elevations closer to sea level and grays indicate everything in between. 
+We begin with a Digital Elevation Model (DEM). A DEM is basically just a raster file where the value of each pixel represents the elevation of that area of land above Mean Sea Level (MSL). The DEM we start with is a coarse 1 km resolution Global DEM obtained from [USGS Earth Explorer](https://earthexplorer.usgs.gov/). If you wish to skip the Earth Explorer website you can directly download the same from this [link](https://www.dropbox.com/s/rjz0htoieyobnfk/gt30e060n40_dem.zip?dl=0). When you open the file in QGIS this is what you see. The white in the image indicates the highest elevations, the black indicates elevations closer to sea level and grays indicate everything in between.
 
 |![Global DEM TOPO 1km basic styling](/img/posts/wdq1/wdq_1.jpg)|
 |:--:|
@@ -40,7 +40,7 @@ Our goal in this exercise is to delineate watersheds for the Ken river basin in 
 |:--:|
 | 4. States of India - River basins overlaid |
 
-The image above gives us a preview of what we want. The USGS Hydrosheds river basins are generally larger river basins. Some smaller river basins such as Ken River are swallowed up and only the larger Ganga-Brahmaputra river basin can be seen. 
+The image above gives us a preview of what we want. The USGS Hydrosheds river basins are generally larger river basins. Some smaller river basins such as Ken River are swallowed up and only the larger Ganga-Brahmaputra river basin can be seen.
 
 # 2. Data Preprocessing
 Next we clip out the larger Ganga-Brahmaputra river basin and use this as a starting point. We do this by clicking on the river basins layer to make it active, then clicking on 'Select feature' in the middle of the menu on the top and then clicking anywhere in the Ganga basin, which makes it turn yellow. Then right click on the river basins file in the layers panel and click 'Save as'. Check the option for 'Save only selected features', select a location to save and say OK. Once this is done you can remove the larger Asia river basins file from the Layers panel and you will only see the Ganga-Brahmaputra basin.
@@ -55,7 +55,7 @@ Next we clip out the larger Ganga-Brahmaputra river basin and use this as a star
 |:--:|
 | 6. Ganga-Brahmaputra river basin |
 
-We now clip the large DEM we started with to the boundaries of the Ganga-Brahmaputra basin. This will make further operations faster and interpretation of the output images simpler. For this, make the DEM layer active (click on it in the Layers panel), then go to Raster > Extraction > Clipper and you see the menu below. 
+We now clip the large DEM we started with to the boundaries of the Ganga-Brahmaputra basin. This will make further operations faster and interpretation of the output images simpler. For this, make the DEM layer active (click on it in the Layers panel), then go to Raster > Extraction > Clipper and you see the menu below.
 
 
 |![DEM Clip to Ganga-Brahmaputra river basin](/img/posts/wdq1/wdq_7.jpg)|
@@ -81,7 +81,7 @@ Normally this would be more cumbersome to fix but I was able to locate the overl
 |:--:|
 | 10. DEM Clipped to Ganga-Brahmaputra river basin |
 
-We now need the raster to be projected to a Projected Coordinate System (PCS) for the purposes of accurate analysis. The coordinate system we're using now, WGS 1984 is good for viewing maps but does not provide the required accuracy for analysis. (I may do a more detailed post on PCS later). The PCS we will use is UTM Zone 44N (EPSG code 32644). To assign a projection the steps are Raster > Projections > Assign Projection. 
+We now need the raster to be projected to a Projected Coordinate System (PCS) for the purposes of accurate analysis. The coordinate system we're using now, WGS 1984 is good for viewing maps but does not provide the required accuracy for analysis. (I may do a more detailed post on PCS later). The PCS we will use is UTM Zone 44N (EPSG code 32644). To assign a projection the steps are Raster > Projections > Assign Projection.
 
 
 |![Projecting to UTM coordinate system](/img/posts/wdq1/wdq_11.jpg)|
@@ -128,7 +128,7 @@ We must now identify the point of confluence between the Ken river and Yamuna to
 |:--:|
 | 17. Pinpointing the confluence|
 
-Now we use the `r.water.outlet` tool. This tool takes two inputs, the Drainage direction raster generated with  `r.watersheds` and the coordinates of the confluence. To ensure the coordinates are in the same coordinate system as UTM Zone 44N we change the project coordinate system by clicking in the bottom right corner. 
+Now we use the `r.water.outlet` tool. This tool takes two inputs, the Drainage direction raster generated with  `r.watersheds` and the coordinates of the confluence. To ensure the coordinates are in the same coordinate system as UTM Zone 44N we change the project coordinate system by clicking in the bottom right corner.
 
 
 |![r.water.outlet](/img/posts/wdq1/wdq_18.jpg)|
@@ -141,5 +141,3 @@ Now we use the `r.water.outlet` tool. This tool takes two inputs, the Drainage d
 | 19. Ken River Basin|
 
 That ends this post. In the next post we will split Ken River Basin into watersheds and compute stream segments for each of the watersheds.
-
-
