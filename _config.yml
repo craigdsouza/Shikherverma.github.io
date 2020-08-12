@@ -4,7 +4,7 @@ default_author: Craig Dsouza
 author: Craig Dsouza
 description: All things me, personal + professional (Open data, Data Collection, GIS/RS)  # used in site head
 keywords: GIS, RS, Open data, ODK, web-scraping
-baseurl: https://craigdsouza.github.io
+baseurl: https://craigdsouza.github.io/
 
 # register on google analytics and replace this token
 google_analytics: UA-78353942-2
