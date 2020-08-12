@@ -23,7 +23,7 @@ Open Data Kit(ODK)/KoboToolbox & Google Forms. Future blogposts may go into deta
 
 0. [Survey Form formats](#0-survey-form-formats)
 1. [An Overview of the features of form builders](#1-an-overview-of-the-features-of-form-builders)
-   1. [Desktop/Web formats](#1.1-desktop/web)
+   1. [Desktop/Web formats](#1.1-desktop-and-web)
 
 # 0. Survey Form formats
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
@@ -90,7 +90,7 @@ substitute feature , 'question libraries'.
 [2] Google forms only offers form logic based on responses to 'select one'/'select multiple' questions
 In comparison, ODK and Kobo allow form logic based on responses to text and numeric questions as well.<br>
 
-## 1.1 Desktop/Web
+## 1.1 Desktop and Web
 Here's a preview of what building a form in each of the builders looks like. ODK Build pictured here is the desktop tool,
 (a similar web tool is also available), whereas Kobo and Google Forms can only be created using a web browser.
 Purely from a user experience perspective Google Forms has an advantage, you simply have to type in your question and it
