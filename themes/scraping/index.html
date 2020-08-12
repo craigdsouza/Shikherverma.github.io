@@ -2,7 +2,7 @@
 layout: page
 title: "scraping"
 description: "getting structured data from unstructured webpages,pdf,docs"
-header-img: "img/banner-maroon.png"
+header-img: "img/banner-pink.png"
 ---
 {% for post in site.posts %}
 
@@ -19,9 +19,9 @@ header-img: "img/banner-maroon.png"
 			{% endif %}
 		</a>
 		<p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.default_author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+  <hr>
 	{% endif %}
 </div>
-<hr>
 {% endfor %}
 
 <!-- Pager -->

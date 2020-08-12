@@ -20,6 +20,7 @@ header-img: "img/banner-gold.png"
 			{% endif %}
 		</a>
 		<p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.default_author }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
+  <hr>
 	{% endif %}
 </div>
 {% endfor %}
