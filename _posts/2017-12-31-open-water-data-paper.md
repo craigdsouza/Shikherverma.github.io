@@ -4,7 +4,7 @@ title:      The Open Water Data Paper
 author:     Craig Dsouza
 tags: 		[wris, cwc, datasets, paper]
 subtitle:  	Datasets for Water Studies in India
-category:  blog
+category:  [blog, datasets]
 theme: open-data
 ---
 
