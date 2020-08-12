@@ -32,6 +32,8 @@ Often in practice however these two get de-linked. Surveys are developed for dat
 |:--:|
 | 1. Link between data collection and goals |
 
+[return to top](#table-of-contents)
+
 # 2. Goals are not enough, we need outcomes and indicators
 If my *goal* is to *shorten my travel time*, I must determine an outcome that will lead to the desired goal. An *outcome* is chosen,
 wherein prior research indicates a causal link between outcome and goal. One outcome that could lead there is to *build a faster car*.
@@ -49,6 +51,8 @@ for instance, here `the percentage of the recommended dietary allowance (RDA) fo
 |:--:|
 | 2. Goals < Outcomes (Indicators) |
 
+[return to top](#table-of-contents)
+
 # 3. Surveys
 Once indicators are established we think about systematic surveys to capture the effect of outcomes. Surveys can be developed from scratch , but in many cases, especially for themes that are well studied, pre-developed and validated surveys are readily available.
 
@@ -61,6 +65,7 @@ or because memory errors could lead to erroneous results. Questions such as thes
 |:--:|
 | 3. Surveys - What to include |
 
+[return to top](#table-of-contents)
 
 # 4. Technical considerations
 A brief note on technical considerations is given here. However these will be elaborated on in a separate article.
@@ -73,6 +78,7 @@ If the choice is to go for digital data entry, a few main points should be taken
 |:--:|
 | 4. Technical considerations |
 
+[return to top](#table-of-contents)
 
 # 5. Training of Surveyors
 The first step in training surveyors is ensuring that the objective of the survey is well understood. Beyond this it is important to ensure appropriate
@@ -90,6 +96,7 @@ training in how to approach survey respondents and ask survey questions. A few s
 - if survey requires medical measurements, ensure satisfying eligibility criteria are met
 - ensure individual's contact details are obtained if the survey is longitudinal in nature
 
+[return to top](#table-of-contents)
 
 # 6. Sampling
 This post does not go very deep into sampling strategies, but it is a subject I'm keenly interested in and I hope to write more on this soon.
@@ -127,6 +134,7 @@ tools: [website with Sample size calculators](https://epitools.ausvet.com.au/)
 |:--:|
 | 6. Sampling |
 
+[return to top](#table-of-contents)
 
 *Note: I'm writing this piece based on my experience working with non-profits in the development sector and research on the subject.
 My experience and research has been limited to quantitative data collection with structured surveys to understand impact,

@@ -34,8 +34,6 @@ Table of Contents
    7. [Form styling](#1g-form-styling)
    8. [Multilingual forms](#1f-multilingual-forms)
 
-[return to top](#table-of-contents)
-
 # 0. Survey Form formats
 An XForm (*.xml) is the open Survey Form format in which ODK/Kobo forms are created. You can create XForms using form builders such as ODK Build,
 or Kobo Build. Another way to create XForms is by first creating XLSForms, and then converting these to XForms using appropriate [tools](https://getodk.org/xlsform/)
@@ -51,6 +49,7 @@ have branched out from the ODK project that also rely on XForms/XLSForms. You ca
 |![XForms/XLSForms](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/0_xform_xlsform.jpg)|
 |:--:|
 | 0. creating an XForm & XLSForm |
+
 [return to top](#table-of-contents)
 
 # 1. An overview of the features of Form Builders
@@ -101,6 +100,8 @@ substitute feature , 'question libraries'.
 [2] Google forms only offers form logic based on responses to 'select one'/'select multiple' questions
 In comparison, ODK and Kobo allow form logic based on responses to text and numeric questions as well.<br>
 
+[return to top](#table-of-contents)
+
 ## 1a. Desktop and Web
 Here's a preview of what building a form in each of the builders looks like. ODK Build pictured here is the desktop tool,
 (a similar web tool is also available), whereas Kobo and Google Forms can only be created using a web browser.
@@ -115,6 +116,8 @@ that is possible too, if one gains familiarity with the formats there are defini
 though for beginners, using a Form Builder is an easy way to get started.
 
 {% include slider.html selector="form_builders_1" %}
+
+[return to top](#table-of-contents)
 
 ## 1b. Question types and Metadata questions
 **Fundamental question (widget) types** in ODK and Kobo Build include text, integer, decimal, multiple choice(select_one, select_multiple),
@@ -145,6 +148,8 @@ multiple choice question with select_one input.<br>
 **metadata questions** can be useful for instance to identity submissions based on the enumerator's id or a device id.
 ODK Build and Kobo both offer `start time`, `end time`, `date`, `device id`, `username`, `simserial`, `subscriberid`, `phonenumber` as metadata fields,
 whereas Kobo also offers the audit metadata field, in ODK Build this isn't available. Google Forms doesn't offer any metadata fields.
+
+[return to top](#table-of-contents)
 
 ## 1c. Composite questions, Groups and Repeats
 While the fundamental question types have been listed above, form builders also offer **composite question types**.
@@ -178,6 +183,8 @@ similar to a sequence of **select_one** questions<br>
 of times as the scenario demands. For instance if a set of questions (height, weight, BMI) needs to be inputted for all children in a classroom,
 then repeats allow for the height and weight questions to be repeated as many times as there are children in the classroom, without knowing
 this number in advance.
+
+[return to top](#table-of-contents)
 
 ## 1d. Response Validation and Form Logic
 **response validation** can be applied for text, numeric, and select_multiple questions. With numbers, response validation can be based on
@@ -213,6 +220,8 @@ questions. The syntax for form logic rules largely overlaps with the syntax for 
 above for response validation can be used as a logical rule to decide whether or not a question, or group of questions should be
 displayed.
 
+[return to top](#table-of-contents)
+
 ## 1e. Dynamic calculations
 ODK Build and Kobo Build allow for dynamically calculated fields which allow use of these inputted variables to change the values
 or logic of subsequent parts of the form. Google Forms presently doesn't have this feature.
@@ -220,6 +229,8 @@ or logic of subsequent parts of the form. Google Forms presently doesn't have th
 |![calculate](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_6_calculation.gif)|
 |:--:|
 | An example "calculate" question (Source: Kobo Toolbox) |
+
+[return to top](#table-of-contents)
 
 ## 1f. Survey templates
 None of the three choices for Form Builders offer ready-to-use templates, but each of them offer the feature to create your own
@@ -237,3 +248,5 @@ A workaround would be to display both languages simultaneously, however, this ca
 |![calculate](/img/posts/2020-08-06-data-coll-choices-survey-form-creation/1_9_multi-lingual.jpg)|
 |:--:|
 | Setting a form to be multi-lingual in ODK Build |
+
+[return to top](#table-of-contents)
