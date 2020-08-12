@@ -7,12 +7,12 @@
   sublinks:
     - title: data how-tos
       url: /themes/data-how-tos/
-    - title: scraping
-      url: /themes/scraping/
-    - title: gis
-      url: /themes/gis/
-    - title: remote sensing
-      url: /themes/remote-sensing/
+#    - title: scraping
+#      url: /themes/scraping/
+#    - title: gis
+#      url: /themes/gis/
+#    - title: remote sensing
+#      url: /themes/remote-sensing/
 - title: datasets
   url: /pages/datasets/
 - title: trainings
