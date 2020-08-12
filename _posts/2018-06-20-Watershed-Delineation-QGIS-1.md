@@ -7,7 +7,7 @@ author: "Craig Dsouza"
 header-img: "img/posts/wdq1/post-bg.jpg"
 comments: true
 tags: [hydrology, dem, river-basin]
-category: blog
+category: [blog, gis]
 theme: gis
 ---
 
