@@ -17,6 +17,7 @@
   url: /pages/datasets/
 - title: services
   url: /services/
+  sublinks:
     - title: data collection
       url: /services/data-collection/
     - title: scraping
