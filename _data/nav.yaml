@@ -15,5 +15,9 @@
 #      url: /themes/remote-sensing/
 - title: datasets
   url: /pages/datasets/
-- title: trainings
-  url: /pages/trainings/
+- title: services
+  url: /services/
+    - title: data collection
+      url: /services/data-collection/
+    - title: scraping
+      url: /services/trainings/
