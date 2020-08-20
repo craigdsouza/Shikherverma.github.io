@@ -39,20 +39,7 @@ description:
 	</div>
 
 	<div class="row">
-		{% for item in site.portfolio %}
-		<div class="col-sm-4 portfolio-item">
-			<a href="#{{ item.anchor }}" class="portfolio-link" data-keyboard="true" data-toggle="modal">
-				<div class="caption" >
-					<div class="caption-content" >
-						{{ item.title }}<p></p>
-						<i class="fa fa-search-plus"></i><p></p>
-						Category: {{ item.category }}
-					</div>
-				</div>
-				<img src="{{ item.image }}" class="img-responsive" alt="">
-			</a>
-		</div>
-		{% endfor %}
+		{% include portfolio.html}
 	</section>
 
 	<!-- Portfolio Modals -->
