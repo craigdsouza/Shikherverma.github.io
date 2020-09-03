@@ -5,6 +5,8 @@
 - title: themes
   url: /themes/
   sublinks:
+    - title: tech how-tos
+      url: /themes/tech-how-tos/
     - title: data how-tos
       url: /themes/data-how-tos/
     - title: scraping
