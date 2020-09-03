@@ -4,9 +4,9 @@ title : "Thinking about data collection"
 subtitle : "an Overview"
 date: 2020-07-28 14:57:00
 author: "Craig Dsouza"
-header-img: "img/posts/imis/banner.png"
+header-img: "/img/posts/2020-07-28-thinking-about-data-coll-overview/3_surveys.jpg"
 comments: true
-tags: [surveys, theory-of-change, sampling]
+tags: [surveys, theory-of-change, sampling, non-profits]
 category: [blog, data-how-tos]
 ---
 Thinking systematically about data collection within organisations in the development space is essential, however it often doesn't
@@ -72,7 +72,7 @@ A brief note on technical considerations is given here. However these will be el
 
 Surveyors may still choose to use paper surveys. Even if this is the case, it is beneficial to use tabular formats to capture responses and consistent notations to indicate choice of an answer. These responses can then more easily be recorded in digital formats using OCR technologies than if the paper format was ad hoc and inconsistent.
 
-If the choice is to go for digital data entry, a few main points should be taken into consideration. Ensure that enumerators are well trained on the tools (apps) they will use for data collection. Choosing apps that work offline should be a priority. It should be possible to save submissions that are incomplete. The data collection app should allow for creating surveys questions and applying form logic as desired. Check out this [post](https://craigdsouza.github.io/blog/data-coll-choices-survey-form-creation) on survey form creation for more details.
+If the choice is to go for digital data entry, a few main points should be taken into consideration. Ensure that enumerators are well trained on the tools (apps) they will use for data collection. Choosing apps that work offline should be a priority. It should be possible to save submissions that are incomplete. The data collection app should allow for creating surveys questions and applying form logic as desired. Check out this [post](https://craigdsouza.github.io/blog/data-how-tos/data-coll-choices-survey-form-creation) on survey form creation for more details.
 
 |![Technical considerations](/img/posts/2020-07-28-thinking-about-data-coll-overview/4_technical_considerations.jpg)|
 |:--:|
