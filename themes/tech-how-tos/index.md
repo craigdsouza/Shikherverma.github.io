@@ -7,18 +7,23 @@ header-img: "img/banner-gloomy.png"
 
 Designed for beginners, posts on this page contain only the basics. Tips and tricks to make your tech journey fun.
 1. Basics - Android
-   0. [basic concepts](https://craigdsouza.in/blog/tech-how-tos/android-concepts)
-   1. navigating, home menu, settings menu, device language, connectivity, 
-   2. browser, Search, news vs ads, youtube
-   3. storage, updates, Google Photos, File management, 
-   4. Play Store, Clock, Calculator 
-   5. Maps
-   6. E-mail + password management
-   7. WhatsApp
-   8. Shareit
-   9. Online meetings (with Google Meet)
-   10. Setting up Payments (Google Pay/ UPI): bill payments - electricity, gas, etc
-   11. Ola/Uber
+   1. [Introductory Concepts](https://craigdsouza.in/blog/tech-how-tos/android-concepts)
+   2. Navigating - menus and motions
+   3. Alarms & Calculator 
+   4. Connectivity - getting on the internet
+   5. Basic settings - device language & gmail id
+   5. Apps - install, update & uninstall
+   6. WhatsApp
+   7. Maps
+   8. Youtube
+   9. UPI payments (Google Pay/ UPI): bill payments - electricity, gas, etc
+   10. Search - browsers, news vs ads
+   11. E-mail + password management
+   11. Google Photos 
+   12. Storage & File management 
+   13. Shareit
+   14. Online meetings (with Google Meet)
+   15. Ola/Uber
 
 2. Intermediate
    1. Documents
