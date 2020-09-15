@@ -7,6 +7,7 @@ header-img: "img/banner-gloomy.png"
 
 Designed for beginners, posts on this page contain only the basics. Tips and tricks to make your tech journey fun.
 1. Basics - Android
+   0. basic concepts
    1. navigating, home menu, settings menu, device language, connectivity, 
    2. browser, Search, news vs ads, youtube
    3. storage, updates, Google Photos, File management, 
