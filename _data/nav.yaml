@@ -13,8 +13,8 @@
       url: /themes/scraping/
     - title: gis
       url: /themes/gis/
-#    - title: remote sensing
-#      url: /themes/remote-sensing/
+    - title: remote sensing
+      url: /themes/remote-sensing/
 - title: datasets
   url: /pages/datasets/
 - title: services
