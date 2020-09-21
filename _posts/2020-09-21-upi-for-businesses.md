@@ -7,7 +7,7 @@ author: "Craig Dsouza"
 header-img: "img/posts/[post-folder-name]/banner.png"
 comments: false
 tags: [ upi ]
-category: [blog]
+category: [blog, tech-how-tos]
 image_sliders:
   - [selector_name_of_slider]
 ---
