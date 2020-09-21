@@ -19,6 +19,9 @@ header-img: "img/banner-forest.png"
    3. Outcome tracking (once in a month/quarter)
    4. Activity tracking (daily/weekly)
    5. Individual view (weekly/monthly)
+   
+3. Data Analysis - Python based data analysis case studies
+   1. 
     
 
 

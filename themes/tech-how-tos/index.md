@@ -5,10 +5,11 @@ description: "blogposts to help get familiar with digital tools"
 header-img: "img/banner-gloomy.png"
 ---
 
-Designed for beginners, posts on this page contain only the basics. Tips and tricks to make your tech journey fun.
+Designed for users of all levels, scan through the index to find something of your interest. 
+
 1. Basics - Android
    1. [Introductory Concepts](https://craigdsouza.in/blog/tech-how-tos/android-concepts)
-   2. Navigating - menus and motions
+   2. [Navigating - menus and interactions](https://craigdsouza.in/blog/tech-how-tos/android-navigation)
    3. Alarms & Calculator 
    4. Connectivity - getting on the internet
    5. Basic settings - device language & gmail id
@@ -16,7 +17,7 @@ Designed for beginners, posts on this page contain only the basics. Tips and tri
    6. WhatsApp
    7. Maps
    8. Youtube
-   9. UPI payments (Google Pay/ UPI): bill payments - electricity, gas, etc
+   9. UPI payments (Google Pay / PhonePe / Paytm / BHIM): bill payments - electricity, gas, etc
    10. Search - browsers, news vs ads
    11. E-mail + password management
    11. Google Photos 
@@ -25,13 +26,16 @@ Designed for beginners, posts on this page contain only the basics. Tips and tri
    14. Online meetings (with Google Meet)
    15. Ola/Uber
 
-2. Intermediate
+2. Intermediate (for individuals)
    1. Documents
    2. Spreadsheets
    3. Slides
    4. Forms
    5. Drive
    6. Organising meetings
+   
+3. Intermediate (for businesses)
+   1. [UPI for businesses](https://craigdsouza.in/blog/tech-how-tos/upi-for-businesses)
    
 
     
