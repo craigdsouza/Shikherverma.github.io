@@ -9,12 +9,10 @@
       url: /themes/tech-how-tos/
     - title: data how-tos
       url: /themes/data-how-tos/
-    - title: scraping
+    - title: scraping/APIs
       url: /themes/scraping/
-    - title: gis
-      url: /themes/gis/
-    - title: remote sensing
-      url: /themes/remote-sensing/
+    - title: geography
+      url: /themes/geography/
 - title: datasets
   url: /pages/datasets/
 - title: services
