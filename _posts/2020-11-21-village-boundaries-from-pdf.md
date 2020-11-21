@@ -14,7 +14,7 @@ image_sliders:
 
 In this post we'll examine the possibility of extracting spatial data (village boundaries and their attributes) from a pdf map of a tehsil (sub-district). This spatial data can then be read and analysed in gis softwares such as QGIS.
 
-|![Screenshot of PDF of Village Map](/img/posts/2020-11-21-village-boundaries-from-pdf/TH-ABD-AURANGABAD.jpg)|
+|![Screenshot of PDF of Village Map](/img/posts/2020-11-21-village-boundaries-from-pdf/TH-ABD-AURANGABAD.PNG)|
 |:--:|
 | Screenshot of PDF of Village Map |
 
