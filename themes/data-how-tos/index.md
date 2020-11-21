@@ -21,7 +21,6 @@ header-img: "img/banner-forest.png"
    5. Individual view (weekly/monthly)
    
 3. Data Analysis - Python based data analysis case studies
-   1. 
     
 
 
