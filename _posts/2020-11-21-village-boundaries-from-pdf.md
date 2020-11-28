@@ -46,7 +46,7 @@ Table of Contents
 En route to choosing a suitable library to work with I found out a little bit about the structure of PDF documents themselves. 
 I chose the library [`PyMuPDF`](https://pymupdf.readthedocs.io/en/latest/) because of it's comprehensive documentation, collection of examples and page reading and manipulation capabilities, both in raster (for images) and vector (for text and drawings) formats.
 
-## Installation/Imports
+## 1.1 Installation/Imports
 Install PyMuPDF with `pip install pymupdf` and import the required libraries, including PyMuPDF, which for some historical reasons must be imported with the name `fitz`
 
 ```
@@ -61,13 +61,16 @@ dataFol = os.path.join(projFol,"data")
 imagesFol = os.path.join(projFol,"images")
 
 print("Current working directory:\n",os.getcwd())    
-        # "Current working directory: 
-           C:\Users\Craig D\Code\pdftogis\notebooks" 
+# Current working directory: 
+  C:\Users\Craig D\Code\pdftogis\notebooks 
 print("\nProj folder:\n",projFol,"\nData folder;\n",dataFol)
-        # Proj folder: 
-           C:\Users\Craig D\Code\pdftogis
-        # Data folder:
-           C:\Users\Craig D\Code\pdftogis\data
+# Proj folder: 
+  C:\Users\Craig D\Code\pdftogis
+# Data folder:
+  C:\Users\Craig D\Code\pdftogis\data
+
+filename = os.path.join(dataFol,'village-maps\\TH_ABD_Aurangabad.pdf')
+print(filename)      # C:\Users\Craig D\Code\pdftogis\data\village-maps\TH_ABD_Aurangabad.pdf
 ```
 
 the version of PyMuPDF I'm using is 1.18.3 
@@ -80,7 +83,7 @@ print(fitz.__doc__)
 # Built for Python 3.6 on win32 (64-bit).
 ```
 
-## Examination of PDF
+## 1.2 Examination of the PDF
 
 ```
 doc = fitz.open(filename)
@@ -95,7 +98,6 @@ page = doc.loadPage(0)
 dir(page)    # lists the methods and attributes of the Page class, including `getText()` , `getDrawings()` and more
 ```
 As mentioned in the docs, 
-
 > Page handling is at the core of MuPDF’s functionality.
 > - You can render a page into a raster or vector (SVG) image, optionally zooming, rotating, shifting or shearing it.
 > - You can extract a page’s text and images in many formats and search for text strings.
@@ -106,9 +108,33 @@ we'll explore some of this functionality in the remainder of this blogpost
 [return to top](#table-of-contents)
 
 # 2. Extracting Village names and positions
-To get all of the text from the pdf along with their relative positioning use the following, which returns an output as shown below.
+To get all of the text from the pdf along with the bounding boxes they lie within, use the `getText()` method of the page object, passing it the argument 'blocks'. This returns an output containing the lower left and upper right x,y coordinates of the position of each text string in the pdf.
 
+```
+text = page.getText('blocks')
+for name in text[10:12]:
+    print("\n",name)
+#(515.4502563476562, 97.36946105957031, 559.2020874023438, 107.29110717773438, 'Phulambri\n', 10, 0)
+# (171.25669860839844, 200.58009338378906, 217.4857940673828, 210.50173950195312, 'Khuldabad\n', 11, 0)
+```
 
+while this is the default format, what we ideally want is just a single x,y coordinate of each name, so that the names and coordinates give us a point gis layer, which can be merged with the polygon layer of the village boundaries. we can get this by simply taking the mean of the two x,y coordinates we already have
+
+```
+pointlayer = []
+
+for name in text:
+    x1,y1 = list(name)[0:2]
+    x2,y2 = list(name)[2:4]
+    villname = list(name)[4].replace("\n","")
+    x0 = (x1+x2)/2
+    y0 = (y1+y2)/2
+    pointlayer.append((x0,y0,villname))
+
+print(pointlayer[10:12])
+```
+
+this still leaves us with names that are clearly labels from the pdf file and not village names, but that's a worry for another day.
 
 [return to top](#table-of-contents)
 
