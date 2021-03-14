@@ -12,9 +12,8 @@ image_sliders:
   - [selector_name_of_slider]
 ---
 
-<a href="https://commons.wikimedia.org/wiki/File:Prince_Harry_and_Meghan_Markle.jpg">Mark Jones</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
-
 ![harry-and-meghan](/img/posts/2021-03-13-british-royalty/harry_meghan.jpg)
+<a href="https://commons.wikimedia.org/wiki/File:Prince_Harry_and_Meghan_Markle.jpg">Mark Jones</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
 
 I see the public response to Harry and Meghan's Oprah interview as a good marker of the spread of conservative and liberal values.
 Jonathan Haidt in his research documents the [moral foundations](https://www.youtube.com/watch?v=7o5mLnfyfaY) of societies: 
