@@ -12,6 +12,10 @@ image_sliders:
   - [selector_name_of_slider]
 ---
 
+<a href="https://commons.wikimedia.org/wiki/File:Prince_Harry_and_Meghan_Markle.jpg">Mark Jones</a>, <a href="https://creativecommons.org/licenses/by/2.0">CC BY 2.0</a>, via Wikimedia Commons
+
+![harry-and-meghan](/img/posts/2021-03-13-british-royalty/harry_meghan.jpg)
+
 I see the public response to Harry and Meghan's Oprah interview as a good marker of the spread of conservative and liberal values.
 Jonathan Haidt in his research documents the [moral foundations](https://www.youtube.com/watch?v=7o5mLnfyfaY) of societies: 
 care, fairness, liberty, loyalty, sanctity and authority.
@@ -41,7 +45,7 @@ a high profile interview with Oprah.
 
 
 [1] While this has been true in the past, 
-left leaning actors too demonstrate their own group loyalties, which differ from those of the conservatives.
+left leaning actors too demonstrate their own group loyalties, which differ from those of the conservatives.<br>
 [2] Libertarians , not liberals are the most vocal advocate of individual sovereignty, but this is more complexity than I wish to get
 into with this article.
 
