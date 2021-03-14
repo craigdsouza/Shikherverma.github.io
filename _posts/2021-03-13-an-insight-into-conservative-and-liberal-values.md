@@ -13,7 +13,7 @@ image_sliders:
 ---
 
 I see the public response to Harry and Meghan's Oprah interview as a good marker of the spread of conservative and liberal values.
-Jonathan Haidt in his research documents the ![moral foundations](https://www.youtube.com/watch?v=7o5mLnfyfaY) of societies: 
+Jonathan Haidt in his research documents the [moral foundations](https://www.youtube.com/watch?v=7o5mLnfyfaY) of societies: 
 care, fairness, liberty, loyalty, sanctity and authority.
 These moral foundations, he likens to the taste buds we're born with, sweet, salty, sour, bitter and umami (meaty flavour). Each of us
 possess these taste buds, but the degree to which they each determine our taste preferences vary. Similarly, while we all possess the
