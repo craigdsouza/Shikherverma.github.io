@@ -12,9 +12,9 @@ image_sliders:
   - [selector_name_of_slider]
 ---
 
-Jonathan Haidt's book *Righteous Mind* is a must read for anyone troubled by constant political angst whether it be differences in the family or news of political clashes. It's an attempt in understanding the other side, what shapes their morality and why there isn't necessarily one right answer when it comes to many moral issues. It's been a few years since I read the book myself , but I never got around to doing the moral foundations questionnaire that the book cites, until now. Here's what my results show
+Jonathan Haidt's book *Righteous Mind* is a must read for anyone troubled by constant political angst whether it be differences in the family or news of political clashes. It's an attempt in understanding the other side, what shapes their morality and why there isn't necessarily one right answer when it comes to many moral issues. It's been a few years since I read the book myself , but I never got around to doing the moral foundations questionnaire on [your morals](https://www.yourmorals.org/) that the book cites, until now. Here's what my results show
 
-|[moral-foundations-results](/img/posts/2021-03-14-moral-foundations/your-morals.PNG)|
+|![moral-foundations-results](/img/posts/2021-03-14-moral-foundations/your-morals.PNG)|
 |:--:|
 | my score on the moral foundations questionnaire |
 
