@@ -25,3 +25,5 @@ The truth however finds it's way of coming out, and if not by open dialogue it w
 My own personal interest in this story is driven more by the challenge to write about uncomfortable topics, rather than a desire to change realities in a continent half a world away. That's for someone else to take on.
 
 Listen to [Ayaan Hirsi Ali](https://open.spotify.com/episode/0yA586XjDwo2eKSYj01ziZ) on Joe Rogan OR read her new book [Prey: Immigration, Islam, and the Erosion of Women's Rights](https://www.amazon.in/Prey-Immigration-Erosion-Womens-Rights/dp/0062857878)
+
+![ayaan-hirsi-ali-book-cover](/img/posts/2021-04-19-when-societies-clash/ayaan-hirsi-ali-prey.jpg)
