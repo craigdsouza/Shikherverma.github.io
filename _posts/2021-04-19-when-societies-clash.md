@@ -2,7 +2,7 @@
 layout: post
 title : "when societies clash"
 subtitle : "why dialogue is so important"
-date: 2021-04-21 21:26:00
+date: 2021-04-19 21:26:00
 author: "Craig Dsouza"
 header-img: "img/banner-cream.png"
 comments: false
