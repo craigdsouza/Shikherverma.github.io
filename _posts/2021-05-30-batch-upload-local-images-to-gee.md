@@ -12,11 +12,11 @@ image_sliders:
   - [selector_name_of_slider]
 ---
 
-The Indian Meteorological Department (IMD) has recently ![published](https://imdpune.gov.in/Clim_Pred_LRF_New/Grided_Data_Download.html) a dataset of daily gridded rainfall (0.25 deg) for the entire time period from 1901 until 2020. The ![reference paper](https://imdpune.gov.in/Clim_Pred_LRF_New/ref_paper_MAUSAM.pdf) for this dataset states that rainfall records from 6995 rain gage stations were used in it's preparation. A comparison of the dataset (named IMD4) suggests that it is comparable with other gridded rainfall datasets across the country and in regions such as the Western Sahyadris it is more realistic given that a higher density of rainfall stations was used. The method used to convert station data to gridded was the Inverse Distance Weighted (IDW) approach, (Shepard, 1968) using a minimum of 1 and maximum of 4 stations within a radial distance of 1.5 deg around the gridded pixel. 
+The Indian Meteorological Department (IMD) has recently [published](https://imdpune.gov.in/Clim_Pred_LRF_New/Grided_Data_Download.html) a dataset of daily gridded rainfall (0.25 deg) for the entire time period from 1901 until 2020. The [reference paper](https://imdpune.gov.in/Clim_Pred_LRF_New/ref_paper_MAUSAM.pdf) for this dataset states that rainfall records from 6995 rain gage stations were used in it's preparation. A comparison of the dataset (named IMD4) suggests that it is comparable with other gridded rainfall datasets across the country and in regions such as the Western Sahyadris it is more realistic given that a higher density of rainfall stations was used. The method used to convert station data to gridded was the Inverse Distance Weighted (IDW) approach, (Shepard, 1968) using a minimum of 1 and maximum of 4 stations within a radial distance of 1.5 deg around the gridded pixel. 
 
 Here we discuss accessing this data and publishing it on Google Earth Engine Image Collection to leverage it's utility against other remote sensing datasets.
 
-*pre-requisites* : clone the following ![github repo](https://github.com/craigdsouza/imdgrid) to your pc, then create a python virtual environment with the following requirements.txt 
+*pre-requisites* : clone the following [github repo](https://github.com/craigdsouza/imdgrid) to your pc, then create a python virtual environment with the following requirements.txt 
 
 Table of Contents
 =================
@@ -24,10 +24,10 @@ Table of Contents
 2. [Convert Grid to Tif](#2-convert-grid-to-tif)
 3. [Split Tif](#3-)
 4. [Upload Tif to GCP Bucket](#4-)
-5. [subprocess loop to upload images]
+5. [Subprocess loop to upload images]
 
 # 1. Download Historical Data
-Data can be downloaded directly from the link provided above or programmatically using the python imdlib library. This ![script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGrid.py) uses the python imdlib library to download historical data programmatically from the IMD website. the following command downloads data for two years starting with 2000 till 2001
+Data can be downloaded directly from the link provided above or programmatically using the python imdlib library. This [script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGrid.py) uses the python imdlib library to download historical data programmatically from the IMD website. the following command downloads data for two years starting with 2000 till 2001
 
 ```shell
 C:Users\[Username]\Code\imdgrid> python IMDHistoricalGrid.py rain 2000 2001
@@ -62,7 +62,7 @@ after running this script you are left with a files in the following directory s
 [return to top](#table-of-contents)
 
 # 4. Upload Tif to GCP Bucket
-First create a Google Cloud Project Bucket and set it's permissions to public, as described ![here](https://cloud.google.com/storage/docs/access-control/making-data-public#buckets). Upload all files to the GCP bucket with the following command.
+First create a Google Cloud Project Bucket and set it's permissions to public, as described [here](https://cloud.google.com/storage/docs/access-control/making-data-public#buckets). Upload all files to the GCP bucket with the following command.
 
 ```shell
 C:Users\[Username]\Code\imdgrid> gsutil cp *.tif gs://[bucketname]
@@ -93,4 +93,4 @@ print("last image date ",ee.Date(rainfall.sort("system:time_start",false).first(
 
 [return to top](#table-of-contents)
 
-Attribution: much of the code here is inspired by ![Ujaval Gandhi](https://github.com/spatialthoughts/projects/tree/master/imd) and ![Qiusheng Wu](https://groups.google.com/g/google-earth-engine-developers/c/h5PZOmU_dfw/m/50MMDvOVAwAJ)
+Attribution: much of the code here is inspired by [Ujaval Gandhi](https://github.com/spatialthoughts/projects/tree/master/imd) and [Qiusheng Wu](https://groups.google.com/g/google-earth-engine-developers/c/h5PZOmU_dfw/m/50MMDvOVAwAJ)
