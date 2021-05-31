@@ -16,65 +16,81 @@ The Indian Meteorological Department (IMD) has recently [published](https://imdp
 
 Here we discuss accessing this data and publishing it on Google Earth Engine Image Collection to leverage it's utility against other remote sensing datasets.
 
-*pre-requisites* : clone the following [github repo](https://github.com/craigdsouza/imdgrid) to your pc, then create a python virtual environment with the following requirements.txt 
+|![final map layer](/img/posts/2021-05-30-how-to-batch-upload-local-images-to-gee/gee-map.PNG)|
+|---|
+|preview of final map layer|
+
+*pre-requisites* : clone the following [github repo](https://github.com/craigdsouza/imdgrid) to your pc, then create a python virtual environment with the following requirements.txt . The packages listed here may be a bit excessive, alternatively you can install packages individually in your environment as required. The code here has been tested with Python 3.7
 
 Table of Contents
 =================
 1. [Download Historical Data](#1-download-historical-data)
 2. [Convert Grid to Tif](#2-convert-grid-to-tif)
-3. [Split Tif](#3-)
-4. [Upload Tif to GCP Bucket](#4-)
-5. [Subprocess loop to upload images]
+3. [Split Tif](#3-split-tif)
+4. [Upload Tif to GCP Bucket](#4-upload-tif-to-gcp-bucket)
+5. [Subprocess loop to upload images](#5-subprocess-loop-to-upload-images)
 
 # 1. Download Historical Data
-Data can be downloaded directly from the link provided above or programmatically using the python imdlib library. This [script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGrid.py) uses the python imdlib library to download historical data programmatically from the IMD website. the following command downloads data for two years starting with 2000 till 2001
+|![imd website](/img/posts/2021-05-30-how-to-batch-upload-local-images-to-gee/imd-website.PNG)|
+|---|
+|imd source of dataset|
+
+Data can be downloaded directly from the link provided above or programmatically using the python imdlib library. The [IMDHistoricalGrid script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGrid.py) uses the python imdlib library to download historical data programmatically from the IMD website. Pass the script the parameters 'rain', starting year and ending year according to which years you wish to download data for. Data is available for 1901 until 2020 and each file downloaded is 25MB.
 
 ```shell
 C:Users\[Username]\Code\imdgrid> python IMDHistoricalGrid.py rain 2000 2001
 ```
-This gives us data in the following directory structure
+
+This script downloads annual grd files in the following directory structure
 - C > Users > [Username] > Data > imd > rain > 2000.grd, 2001.grd
 
 [return to top](#table-of-contents)
 
 # 2. Convert Grid to Tif
-the IMDHistoricalGrid2Tif script uses the imdlib library and rasterio to read in grd files and output tif files . you are then left with annual tif files in the following directory structure
+the [IMDHistoricalGrid2Tif script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGrid2Tif.py) uses the imdlib library and rasterio to read in grd files and output tif files. Pass the script the parameters 'rain', starting year and ending year as per your needs.
 
 ```shell
 C:Users\[Username]\Code\imdgrid> python IMDHistoricalGrid2Tif.py rain 2000 2001
 ```
 
+you are then left with annual tif files in the following directory structure
 - C > Users > [Username] > Data > imd > rain > tif > 2000.tif
 
 [return to top](#table-of-contents)
 
 # 3. Split Tif
-split the annual tif files into daily tif files and save to sub-directories with IMDHistoricalTif2Daily 
+the [IMDHistoricalTif2Daily script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalTif2Daily.py) splits the annual tif files into daily tif files and save to sub-directories with IMDHistoricalTif2Daily . Pass the script the parameters 'rain', starting year and ending year as per your needs.
 
 ```shell
 C:Users\[Username]\Code\imdgrid> python IMDHistoricalTif2Daily.py rain 2000 2001
 ```
 
-after running this script you are left with a files in the following directory structure.
+after running this script you are left with daily files in the following directory structure.
 
 - C > Users > [Username] > Data > imd > rain > tif > 2000 > 20000101.tif,..,20001231.tif 
 
 [return to top](#table-of-contents)
 
 # 4. Upload Tif to GCP Bucket
-First create a Google Cloud Project Bucket and set it's permissions to public, as described [here](https://cloud.google.com/storage/docs/access-control/making-data-public#buckets). Upload all files to the GCP bucket with the following command.
+First create a Google Cloud Project Bucket and set it's permissions to public, as described [here](https://cloud.google.com/storage/docs/access-control/making-data-public#buckets). 
+
+|![bucket public access](/img/posts/2021-05-30-how-to-batch-upload-local-images-to-gee/bucket-public-access.PNG)|
+|---|
+|editing permissions on bucket to make it public |
+
+Upload all files to the GCP bucket with the following command.
 
 ```shell
-C:Users\[Username]\Code\imdgrid> gsutil cp *.tif gs://[bucketname]
+C:Users\[Username]\Code\imdgrid> gsutil -m cp *.tif gs://[bucketname]
 ```  
 
 [return to top](#table-of-contents)
 
 # 5. Subprocess loop to upload images
-upload images to GEE using the geeupload script, which calls the earthengine CLI from within python to copy daily tif files from your GCP to GEE Assets
+upload images to GEE using the [IMDHistoricalGCP2GEE script](https://github.com/craigdsouza/imdgrid/blob/master/IMDHistoricalGCP2GEE.py), which calls the earthengine CLI from within python to copy daily tif files from your GCP to GEE Assets. This script must be passed several parameters including year, bucketname, geeusername and geeimagecollectionpath.
 
 ```shell
-C:Users\[Username]\Code\imdgrid> python IMDHistoricalGCP2GEE.py 2020 [bucketname] [geeusername] [gee-collection-path]
+C:Users\[Username]\Code\imdgrid> python IMDHistoricalGCP2GEE.py 2020 [bucketname] [geeusername] [gee-image-collection-path]
 ```
 
 finally delete all images from the GCP Bucket after they have been copied to Google Earth Engine Assets
